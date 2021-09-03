@@ -1,291 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>tailwind Demo</title>
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-    <style>
-        img {
-            width: 100vw;
-            height: 80vh;
-        }
+/* Full height image header */
+.bgimg-1 {
+  background-position:center;
+  background-size:cover;
+  background-image: url("./Alicia/alicia-05.jpg");
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+ 
+}
 
-        .centro {
-            position:absolute;
-            top: 25vh;
-            left:60vw;
-            color: white;
-        }
-        .b {
-            position:absolute;
-            top: 35vh;
-            left:60vw;
-            color: white;
-        }
-        .c {
-            position:absolute;
-            top: 45vh;
-            left:50vw;
-            color: white;
-        }
+.w3-bar .w3-button {
+  padding: 16px;
+}
 
+.alicia{
+    width: 100%;
+    height: auto;
+}
+</style>
+<body>
 
-        .test {
-            background-image: url("./g6.jpg");
-            background-repeat: no-repeat;
-            border-radius: 70%;
-            height: 60vh;
-            width: 60vw;
-            position: relative;
-            left: 15%;
-        }
-    </style>
-
-</head>
-
-<body class="bg-gray-100 text-center  shadow-2xl px-2 m-1 rounded">
-    <img class="" src="/g6.jpg" alt="">
-    <div class="text-gray-900">
-       
-        <h1 class="font-bold text-4xl mb-5 mt-10 ml-20 text-white text-left absolute top-0 left-0 ">Learning Tailwind CSS</h1>
-        <h1 class="centro font-bold text-4xl">Just CSS</h1>
-        <p class="b text-1xl text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-        <a href="#contact" class="c bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">To Learn more Contact Us</a>
-  
-        <h1 class="font-bold text-4xl m-5 hover:text-blue-500">Title</h1>
-
-        <div class="m-10">
-            <p class="ml-2 mb-2 pl-10 pr-10 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                dolore accusantium eaque dicta. Commodi, suscipit?</p>
-            <p class="ml-2 pl-10 p4-10 mr-12 mb-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ullam, saepe voluptatem. Aut est assumenda, amet voluptatibus ipsum officia iusto repellat excepturi ad
-                eaque sed porro, fuga aspernatur quos blanditiis quia expedita iste consectetur repellendus molestiae
-                aperiam ipsa saepe. Tenetur vel a ut beatae assumenda, enim error nemo sit modi, quae sequi omnis non
-                asperiores magnam nesciunt! Ipsa recusandae vel alias quam maxime fugiat qui consectetur nobis eaque at
-                omnis hic laboriosam aliquid saepe in, quas corrupti expedita minima dolorem voluptates sed voluptatum
-                ullam? Vero veniam hic, nemo laudantium aliquam mollitia, doloribus quidem a eos molestiae adipisci.
-            </p>
-        </div>
-
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">
+      <img class="" src="logo.png" alt="Logo" width="350" height="104">
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ACERCA</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EQUIPO</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> TRABAJOS</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRECIO</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTAR</a>
     </div>
-    <section class="bg-gray-100 ml-20 mr-20 flex mb-4">
-        <div class="w-1/3">
-            <div class="m-2 rounded overflow-hidden shadow-lg hover:shadow-2xl">
-                <img class="w-full h-40" src="g6.jpg" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                    <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-                </div>
-            </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ACERCA</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPO</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">TRABAJOS</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRECIOS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTAR</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1  w3-display-container w3-grayscale-min" id="home">
+ 
+  <div class="w3-display-left w3-text-black" style="padding:8px">
+
+
+    
+    <span class="w3-jumbo w3-hide-small">La Danza</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">La Danza</span><br>
+    <span class="w3-large"><cite>La Danza es la esencia de la Palabra.</cite> <b>Alicia Alonso</b></span>
+
+    <p><a href="#contact" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Solicite su matricula Hoy</a></p>
+ 
+  
+
+  </div> 
+
+
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ACERCA DE LA UNIVERSIDAD</h3>
+
+
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <p><a href="https://drive.google.com/file/d/1bD_zwACbFkBtYbogRdbYJHrSf1TaK54i/view" class="w3-button w3-black"><i class="fa fa-th"> </i> Vea Documental de Nuestro Comienzo</a></p>
+  </div>
+
+
+  <p class="w3-center w3-large">Claves Fundamentales de Nuestra Universidad</p>
+
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-center">
+      <img src="./Alicia/alicia.png" width="50%;" alt="Alicia" style="border-radius: 50%;">
+    </div>
+  </div>
+
+
+  <p class="w3-center">Estas claves se basan en el pensamiento de Alicia Alonso: <cite>"Nuestras vidas por esta tierra, por este mundo, por este momento, es una sola…pasamos por aquí una sola vez. Si la queremos contemplar y ver con belleza, con optimismo, con felicidad, hagamos algo útil para la humanidad, me parece que hay que amar  a la humanidad, hay que amar la vida hay que darse cuenta del valor de ella. Vivimos una sola vez aquí, seamos felices."</cite> </p>
+
+
+ 
+  
+ 
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <img src="./Alicia/work-07.png" width="50%;" alt="Alicia" style="height: 150px;">
+      <p class="w3-large">Disciplina</p>
+      <p>Alicia Alonso fue bailarina por 7 decadas y nunca se sintio llegar a la cima de su carrera profesional. Siempre encontraba que aun no llegaba a medida que deseaba estar. Por eso, su disciplina en el baile fue muy estricto.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./Alicia/alicia-03.jpg" width="50%;" alt="Alicia Joven" style="height: 150px;">
+      <p class="w3-large">Pasion</p>
+      <p>Alicia Alonso desde muy joven sintio una gran pasion por el baile cuya pasion la convirtio en la primera y absoluta bailarina del mundo.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./Alicia/alicia-07.jpg" width="50%;" alt="Alicia Joven" style="height: 150px;">
+      <p class="w3-large">Consagracion</p>
+      <p>Alicia Alonso siempre estuvo consagrada al que tanto amaba.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./Alicia/alicia-04.jpg" width="50%;" alt="Alicia Joven" style="height: 150px;">
+      <p class="w3-large">Legado</p>
+      <p>Alicia Alonso fundo el Ballet Nacional de Cuba y otros numerosas compania en el resto del mundo. Hizo aportes a todos las obras de ballet comenzando con Giselle.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">EL EQUIPO</h3>
+  <p class="w3-center w3-large">Los que dirigen esta Universidad</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Alicia/alberto.png" alt="Alberto" style="width:100%; height: 300px;">
+        <div class="w3-container">
+          <h3>Alberto Garcia Castano</h3>
+          <p class="w3-opacity">Director General</p>
+          <p>Instituto Universitario de la Danza AA</p>
+         
         </div>
-        <div class="w-1/3 bg-gray-100">
-            <div class="m-2 rounded overflow-hidden shadow-lg bg-purple-100 hover:shadow-2xl">
-                <img class="w-full h-40 " src="m1.png" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                    <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                </div>
-            </div>
-
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Alicia/amador.png" alt="Amador" style="width:100%; height: 300px;">
+        <div class="w3-container">
+          <h3>Amador Cernuda Lago</h3>
+          <p class="w3-opacity">Subdirector</p>
+          <p>Instituto Universitario de la Danza AA</p>
+        
         </div>
-        <div class="w-1/3">
-            <div class="m-2 rounded overflow-hidden shadow-lg hover:shadow-2xl">
-                <img class="w-full h-40 w-40" src="g1.jpg" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                    <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Alicia/lewis2.png" alt="Lewis" style="width:100%; height: 300px;">
+        <div class="w3-container">
+          <h3>Luis Llerena Diaz</h3>
+          <p class="w3-opacity">Secretario General</p>
+          <p>Instituto Universitario de la Danza AA</p>
         </div>
-    </section>
-
-    <section class="bg-gray-100 ml-20 mr-20 flex mb-4">
-
-        <div class="bg-white p-4">
-            <h1 class="text-4xl">Subtitle Two</h1>
-            <img class="float-left ml-4 mx-2 h-32 w-40 rounded-lg shadow-xl" src="g2.jpg">
-            <p class="text-justify m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis autem
-                mollitia amet, omnis blanditiis a minima labore ab sint cupiditate repudiandae ea quisquam. At
-                asperiores similique voluptatibus facere nulla est corrupti omnis recusandae debitis minima quam hic
-                quibusdam, reiciendis amet vitae eos porro magnam odit voluptates obcaecati provident dicta itaque
-                animi. Deleniti sint quo nam sequi amet, nemo quia saepe. Atque, nulla ipsam dolor sunt distinctio
-                aspernatur, alias enim cum sint animi voluptate consequuntur! Delectus, fuga eos. Quisquam assumenda
-            </p>
-            <img class="float-right ml-4 my-2 h-32 w-40 rounded-lg shadow-xl" src="g1.jpg">
-            <p class="text-justify m-4">
-               
-                temporibus maiores inventore nam eius officiis quasi, nostrum praesentium neque maxime optio debitis,
-                natus architecto eos. Earum neque, nisi suscipit eos ullam, adipisci deleniti consequuntur minima aut
-                quasi in mollitia, nihil atque officia similique quis alias maxime explicabo. Distinctio, quae
-                cupiditate. Vel, numquam! Accusamus reprehenderit sequi ipsam aliquid cum facere eligendi odit eveniet,
-                minima sint esse, maiores labore voluptatem accusantium? Culpa libero quisquam architecto possimus
-                distinctio, earum recusandae illum. Vitae, dolorum.</p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Alicia/angeles.png" alt="Angeles" style="width:100%; height: 300px;">
+        <div class="w3-container">
+          <h3>Angeles Arranz del Barrio</h3>
+          <p class="w3-opacity">Ex-Bailarina</p>
+          <p>Ballet Nacional de España</p>
+       
         </div>
-
-    </section>
-    <section class="center">
-
-        <div class="bg-gray-100 ml-20 mr-20 flex">
-
-            <div class="bg-white">
-                <h1 class="text-4xl">Gallery</h1>
-                <!-- Six columns -->
-                <div class="flex">
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40 w-100" src="g1.jpg" alt="">
-                    </div>
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40  w-100" src="g2.jpg" alt="">
-                    </div>
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40 w-100" src="g3.jpg" alt="">
-                    </div>
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40 w-100" src="g6.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-gray-100 ml-20 mr-20 flex">
-
-            <div class="bg-white">
-                <!-- Six columns -->
-                <div class="flex">
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40 w-100" src="g6.jpg" alt="">
-                    </div>
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40  w-100" src="g5.jpg" alt="">
-                    </div>
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40 w-100" src="g2.jpg" alt="">
-                    </div>
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40 w-100" src="g1.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-gray-100 ml-20 mr-20 flex">
-
-            <div class="bg-white">
-                <!-- Six columns -->
-                <div class="flex">
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40 w-100" src="g1.jpg" alt="">
-                    </div>
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40  w-100" src="g2.jpg" alt="">
-                    </div>
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40 w-100" src="g3.jpg" alt="">
-                    </div>
-                    <div class="w-1/4 bg-gray-100 m-2 border-4 border-gray-900 rounded">
-                        <img class="h-40 w-100" src="g6.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-    </section>
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Nuestro Trabajo</h3>
+  <p class="w3-center w3-large">Lo que hemos logrado</p>
 
-    <section class="bg-gray-100 ml-20 mr-20 flex">
-        <div class="bg-fixed test">
-          <p class="text-white mt-5"></p>
-        </div>
-    </section>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="./Alicia/ballet-00.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Alicia/work-01.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Alicia/work-02.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Alicia/work-03.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+    </div>
+  </div>
 
-    <section id="contact" class="bg-teal-300  ml-40 mt-5 mr-40 p-10">
-        <div class="w-full">
-           <h1 class="font-bold text-4xl">About</h1>
-           <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ea incidunt asperiores qui adipisci nisi ab reprehenderit temporibus optio fugit repellat quisquam eligendi, magnam repudiandae?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti officiis, molestiae odit harum minima distinctio quae, reprehenderit fugit blanditiis unde tenetur eveniet rerum a voluptate. Totam voluptates magnam odio maxime veniam perspiciatis dicta adipisci ab sit sed. Quisquam quos eius corporis deleniti deserunt nemo quaerat expedita totam autem labore ea ipsam quo cupiditate dolores, minima fugiat maiores, doloribus consequatur! Cupiditate quisquam assumenda error dolor facere optio fugiat possimus dolores rem, tempora eligendi, culpa voluptate autem cumque nihil tempore ut, eveniet soluta hic sequi? Quae odio aut facilis eligendi voluptate saepe magnam facere beatae illum doloremque quam, itaque tempora fuga hic. Voluptate reprehenderit veritatis, inventore consequuntur omnis hic error possimus eos cumque similique porro, ullam voluptatibus, quos ipsa ad ab molestias labore fuga reiciendis unde deserunt ipsum rerum vitae. Itaque veritatis quam quos maxime dolorum dolor, doloremque adipisci quasi, consequuntur maiores culpa possimus laborum expedita animi totam magnam nesciunt fugiat ea!</p>       
-        </div>
-    </section>
-     <section id="contact" class="bg-gray-100 text-gray-900 ml-40 mr-40 p-10">
-         <div class="w-full">
-            <h1 class="font-bold text-4xl">Contact</h1>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <form class="p-5 mt-5 bg-gray-100 shadow-lg">
-                <div class="">
-                  <div class="w-full">
-                    <label class="font-bold text-2xl" for="inline-full-name">
-                      Full Name
-                    </label>
-                  </div>
-                  <div class="w-full">
-                    <input class="bg-gray-400 text-3xl" id="inline-full-name" type="text" value="Jane Doe">
-                  </div>
-                </div>
-                <div class="">
-                  <div class="">
-                    <label class="font-bold text-2xl" for="inline-username">
-                     Email
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="bg-gray-400 text-3xl" id="inline-username" type="email" placeholder="john@gmail.com">
-                  </div>
-                </div>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="./Alicia/work-04.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Alicia/work-05.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Alicia/work-06.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Alicia/ballet-00.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
 
 
-                <div class="">
-                    <div class="mt-5"></div>
-                    <textarea class="bg-gray-400" name="" id="" cols="60" rows="10" placeholder="Message here"></textarea>
-                   
-                  </div>
+<!-- Pricing Section -->
 
-               
-           
-                <div class="">
-                  <div class=""></div>
-                  <label class="">
-                    <input class="mr-2 leading-tight" type="checkbox">
-                    <span class="text-sm">
-                      Send me your newsletter!
-                    </span>
-                  </label>
-                </div>
 
-                <div class="">
-                  <div class=""></div>
-                  <div class="">
-                    <button class="shadow bg-teal-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
-                     Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
-         </div>
-     </section>
 
-     <footer class="text-center bg-gray-900 text-white h-20 mt-40 pt-5">
-         Demo Tealwind CSS - 2020
-     </footer>
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRECIO</h3>
+  <p class="w3-large">Por Año</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-green w3-xlarge w3-padding-48">Clases</li>
+        <li class="w3-padding-16"><b></b> Clase I</li>
+        <li class="w3-padding-16"><b></b> Clase II</li>
+        <li class="w3-padding-16"><b></b> Clase III</li>
+        <li class="w3-padding-16"><b></b> Final</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">€ 1000.00 </h2>
+          <span class="w3-opacity">por año</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Matricular</button>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+</div>
 
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACTAR</h3>
+  <p class="w3-center w3-large">Mantengamonos en contacto. Envienos un mensaje:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Madrid, España</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +34 914-888-177</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: director.universidad.danza@hotmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <img src="./Alicia/mapa.png" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir Arriba</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.youtube.com/channel/UC1lQXyfTrW4jTE65LoxIxtw" title="W3.CSS" target="_blank" class="w3-hover-text-green">DSLIJCU</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
 
 </body>
-
 </html>
