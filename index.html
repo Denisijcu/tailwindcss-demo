@@ -311,19 +311,30 @@ body, html {
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +34 914-888-177</p>
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: director.universidad.danza@hotmail.com</p>
     <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+
+
+
+
+    <form id="signup">
+      <p>
+        <input class="w3-input w3-border"  placeholder="Name" type="text" name="name" value="">
+      </p>
+      <p>
+        <input class="w3-input w3-border" placeholder="Email" type="email" name="email" value="">
+      </p>
+      <p>
+      <textarea  class="w3-input w3-border" placeholder="Message" name="message"></textarea>
+      </p>
       <p>
         <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
+      
     </form>
+    <div class="feedback"></div>
     <!-- Image of location/map -->
-    <img src="./mapa.png" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    <img src="./Alicia/mapa.png" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
   </div>
 </div>
 
@@ -366,6 +377,76 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
+
+
+  (function () {
+    console.log('Estoy ahora aqui');
+    const url = 'https://script.google.com/macros/s/AKfycbz6xInmEL_B67TB114PRu9LT1gJ_hYgBjEkZq3nHA8aluhXfuwhpOErpEHLJlwukHaa/exec';
+    const former = document.querySelector('#signup');
+    const submit = document.querySelector('button[type="submit"]');
+    const first = document.querySelector('input[name="name"]');
+    const email = document.querySelector('input[name="email"]');
+    const message = document.querySelector('textarea[name="message"]');
+    const feedback = document.querySelector('.feedback');
+    submit.addEventListener('click', (e) => {
+      e.preventDefault();
+      let error = null;
+      first.style.background = 'white';
+      message.style.background = 'white';
+      email.style.background = 'white';
+      if (first.value.length < 5) {
+        error = 'name not long enough';
+        first.style.background = 'red';
+      }
+      if (message.value.length < 5) {
+        error = 'message not long enough';
+        message.style.background = 'red';
+      }
+      if (!validateEmail(email.value)) {
+        error = 'No valid email';
+        email.style.background = 'red';
+      }
+      console.log(error);
+      if (error) {
+        console.log('error thrown' + error);
+      }
+      else {
+        const payload = {
+          email: email.value
+          , name: first.value
+          , message: message.value
+        };
+        sendeMail(payload);
+        //POST DATA
+      }
+    })
+ 
+    function sendeMail(payload) {
+      console.log(payload);
+      fetch(url, {
+        method: 'POST'
+        , body: JSON.stringify(payload)
+      }).then((response) => response.json()).then((data) => {
+        console.log(data);
+        updateFeedback(data.status, 'green');
+      })
+
+      document.querySelector('input[name="name"]').value='';
+      document.querySelector('input[name="email"]').value='';
+      document.querySelector('textarea[name="message"]').value='';
+    }
+    function updateFeedback(val, cl) {
+      console.log(val);
+      feedback.style.color = cl;
+      feedback.innerHTML = `${val}`;
+    }
+ 
+    function validateEmail(email) {
+      const re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+  })();
 </script>
 
 </body>
