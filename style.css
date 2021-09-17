@@ -1,0 +1,114 @@
+body,
+.paralelex {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+
+.pimg1,
+.pimg11,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+.pimg11 {
+  background-image: url('segoviadia.jpg');
+  min-height: 80vh;
+}
+
+.pimg2 {
+  background-image: url('segovia-night.jpg');
+  min-height: 80vh;
+}
+
+.pimg3 {
+  background-image: url('segovia.jpg');
+  min-height: 80vh;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  font-family: lobster;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 4.9em;
+  letter-spacing: 8px;
+
+}
+
+.ptext .border {
+
+  color: #000;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+.modal {
+  z-index: 1;
+  position: absolute;
+  top: 5px;
+  left: 25px;
+}
+
+
+
+@media (max-width: 568px) {
+
+  .pimg1,
+  .pimg11,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+
+  .ptext {
+    font-family: lobster;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 3.9em;
+    letter-spacing: 8px;
+
+  }
+
+  h2 {
+    font-family: lato;
+  }
+}
