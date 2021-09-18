@@ -6,287 +6,367 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link
-      href="https://fonts.googleapis.com/css?family=Lobster"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="style.css" />
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Montserrat', sans-serif
+    }
 
-body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif}
-  
 
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
 
-/* Full height image header */
-.bgimg-1 {
-  background-position:center;
-  background-size:cover;
-  background-image: url("./alicia-05.jpg");
-  background-repeat: no-repeat;
-  min-width: 100%;
-  min-height: 100%;
-  margin:0px; 
-}
+    /* Full height image header */
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("./alicia-05.jpg");
+        background-repeat: no-repeat;
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0px;
+    }
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
-  
-.alicia{
-    width: 100%;
-    height: auto;
-}
-  
- .lk {
-    margin: 10px;
-    padding: 0px;
-  }
-  
-  .negrita {
-   font-weight: bold;
-  }
-  
-  .sombra{
-  box-shadow: 4px 4px 4px gray;
-}
-  
-  .about-bk-color{
-    background-color: rgb(0, 191, 255);
-    color: rgb(255, 255, 255);
-    padding: 20px;
-  }
-  
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+
+    .alicia {
+        width: 100%;
+        height: auto;
+    }
+
+    .lk {
+        margin: 10px;
+        padding: 0px;
+    }
+
+    .negrita {
+        font-weight: bold;
+    }
+
+    .sombra {
+        box-shadow: 4px 4px 4px gray;
+    }
+
+    .about-bk-color {
+        background-color: rgb(0, 191, 255);
+        color: rgb(255, 255, 255);
+        padding: 20px;
+    }
 </style>
+
 <body>
-  
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-     <a href="#home" class="w3-bar-item w3-button w3-wide">
-      <img class="w3-hide-small" src="logo.png" alt="Logo" width="100%" height="100px">
-    </a>
-    
-   
-   
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ACERCA</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EQUIPO</a>
-    <!--  <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-archive"></i> CULTURAL</a> -->
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIA</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRECIO</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTAR</a>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">
+                <img class="w3-hide-small" src="logo.png" alt="Logo" width="100%" height="100px">
+            </a>
+
+
+
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">ACERCA</a>
+                <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EQUIPO</a>
+                <!--  <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-archive"></i> CULTURAL</a> -->
+                <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIA</a>
+                <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRECIO</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTAR</a>
+            </div>
+
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button  w3-left w3-hide-large w3-hide-medium"
+                onclick="w3_open()" style="margin-left:2px; padding:6px; padding-left:0px;">
+                <i class="fa fa-bars"></i>
+                <img class="" src="logo.png" alt="Logo" width="304" height="50" style="margin-left:5px">
+            </a>
+        </div>
     </div>
-    
-          <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button  w3-left w3-hide-large w3-hide-medium" onclick="w3_open()"  style="margin-left:2px; padding:6px; padding-left:0px;">
-      <i class="fa fa-bars"></i>
-       <img class="" src="logo.png" alt="Logo" width="304" height="50" style="margin-left:5px">
-    </a>
-  </div>
-</div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ACERCA</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPO</a>
- <!-- <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">CULTURAL</a> -->
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">GALERIA</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRECIOS</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTAR</a>
-</nav>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ACERCA</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPO</a>
+        <!-- <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">CULTURAL</a> -->
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">GALERIA</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRECIOS</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTAR</a>
+    </nav>
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min " id="home">
-  
-
- 
-  <div class="w3-display-left" style="padding:8px">
-
-    <span class="w3-jumbo w3-hide-small w3-text-pink negrita">La Danza </span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-text-pink negrita">La Danza</span><br>
-    <span class="w3-large w3-text-pink negrita"><cite>"La Danza es la esencia de la Palabra."</cite> <span style="font-style:italic;color:blue;">Alicia Alonso</span></span>
-
-    <p class="w3-text-white"><a href="#contact" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Solicite su matricula Hoy</a></p>
- 
-  
-
-  </div> 
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min " id="home">
 
 
-  <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
-   
-    <a href="https://www.facebook.com/instituto.danza/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/instituto_danza/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.youtube.com/channel/UC5mD-bcqQA5gi4uHno7WOpg"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/instituto_danza"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/company/instituto-universitario-alicia-alonso/about/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  </div>
-</header>
-  
-  <!-- Alicia -->
- <div class="w3-container w3-blue" style="padding:128px 16px" id="alicia">
- <p class="w3-center w3-large">Claves Fundamentales del Instituto</p>
 
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-center">
-      <img src="./alicia.png" width="50%;" alt="Alicia" style="border-radius: 50%;">
+        <div class="w3-display-left" style="padding:8px">
+
+            <span class="w3-jumbo w3-hide-small w3-text-pink negrita">La Danza </span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-text-pink negrita">La Danza</span><br>
+            <span class="w3-large w3-text-pink negrita"><cite>"La Danza es la esencia de la Palabra."</cite> <span
+                    style="font-style:italic;color:blue;">Alicia Alonso</span></span>
+
+            <p class="w3-text-white"><a href="#contact"
+                    class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Solicite
+                    su matricula Hoy</a></p>
+
+
+
+        </div>
+
+
+        <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
+
+            <a href="https://www.facebook.com/instituto.danza/"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/instituto_danza/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.youtube.com/channel/UC5mD-bcqQA5gi4uHno7WOpg"><i
+                    class="fa fa-youtube w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/instituto_danza"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/company/instituto-universitario-alicia-alonso/about/"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+    </header>
+
+    <!-- Alicia -->
+    <div class="w3-container w3-blue" style="padding:128px 16px" id="alicia">
+        <p class="w3-center w3-large">Claves Fundamentales del Instituto</p>
+
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-center">
+                <img src="./alicia.png" width="50%;" alt="Alicia" style="border-radius: 50%;">
+            </div>
+        </div>
+
+
+        <p class="w3-center">Estas claves se basan en el pensamiento de Alicia Alonso: <cite>"Nuestras vidas por esta
+                tierra, por este mundo, por este momento, es una sola…pasamos por aquí una sola vez. Si la queremos
+                contemplar y ver con belleza, con optimismo, con felicidad, hagamos algo útil para la humanidad, me
+                parece que hay que amar a la humanidad, hay que amar la vida hay que darse cuenta del valor de ella.
+                Vivimos una sola vez aquí, seamos felices."</cite> </p>
+
+        <p class="w3-left"> Alicia Ernestina de la Caridad del Cobre Martínez del Hoyo (La Habana, Cuba, 21 de diciembre
+            de 1920-La Habana, 17 de octubre de 2019),1​2​ más conocida como Alicia Alonso, fue una bailarina
+            profesional y coreógrafa cubana. Famosa por sus representaciones de Giselle y Carmen, además de otras
+            grandes obras del repertorio clásico y romántico.3​ Fue la figura cimera del ballet en Iberoamérica y uno de
+            los grandes mitos de la danza.</p) <p><a href="https://es.wikipedia.org/wiki/Alicia_Alonso"
+                class="w3-bar-item w3-button">Leer más </a></p>
+
+
+
+
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <img src="./work-07.png" width="50%;" alt="Alicia" style="height: 150px;">
+                <p class="w3-large">Disciplina</p>
+                <p>Alicia Alonso fue bailarina por 7 decadas y nunca se sintio llegar a la cima de su carrera
+                    profesional. Siempre encontraba que aun no llegaba a medida que deseaba estar. Por eso, su
+                    disciplina en el baile fue muy estricto.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="./alicia-03.jpg" width="50%;" alt="Alicia Joven" style="height: 150px;">
+                <p class="w3-large">Pasión</p>
+                <p>Alicia Alonso desde muy joven sintio una gran pasion por el baile cuya pasion la convirtio en la
+                    primera y absoluta bailarina del mundo.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="./alicia-07.jpg" width="50%;" alt="Alicia Joven" style="height: 150px;">
+                <p class="w3-large">Consagración</p>
+                <p>Alicia Alonso siempre estuvo consagrada a lo que tanto amaba: la danza clásica. El ballet fue su
+                    mayor felicidad durante toda su vida.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="./alicia-04.jpg" width="50%;" alt="Alicia Joven" style="height: 150px;">
+                <p class="w3-large">Legado</p>
+                <p>Alicia Alonso fundo el Ballet Nacional de Cuba y otros numerosas compania en el resto del mundo. Hizo
+                    aportes a todos las obras de ballet comenzando con Giselle.</p>
+            </div>
+        </div>
     </div>
-  </div>
 
+    <div class="w3-container w3-blue">
+        <div class="w3-col l4 m4 w3-margin-bottom"></div>
+        <div class="w3-col l4 m4 w3-margin w3-center">
+            <div class="w3-circle">
+                <iframe style="border-radius:5%" width="90%" height="350px"
+                    src="https://www.youtube.com/embed/krcmx4vdeTU" title="YouTube video player" frameborder="0"
+                    allowFullScreen allowfullscreen></iframe>
+            </div>
 
-  <p class="w3-center">Estas claves se basan en el pensamiento de Alicia Alonso: <cite>"Nuestras vidas por esta tierra, por este mundo, por este momento, es una sola…pasamos por aquí una sola vez. Si la queremos contemplar y ver con belleza, con optimismo, con felicidad, hagamos algo útil para la humanidad, me parece que hay que amar  a la humanidad, hay que amar la vida hay que darse cuenta del valor de ella. Vivimos una sola vez aquí, seamos felices."</cite> </p>
-
-  <p class="w3-left"> Alicia Ernestina de la Caridad del Cobre Martínez del Hoyo (La Habana, Cuba, 21 de diciembre de 1920-La Habana, 17 de octubre de 2019),1​2​ más conocida como Alicia Alonso, fue una bailarina profesional y coreógrafa cubana. Famosa por sus representaciones de Giselle y Carmen, además de otras grandes obras del repertorio clásico y romántico.3​ Fue la figura cimera del ballet en Iberoamérica y uno de los grandes mitos de la danza.</p)
-  <p><a href="https://es.wikipedia.org/wiki/Alicia_Alonso"  class="w3-bar-item w3-button">Leer más </a></p>
-  
- 
-  
- 
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <img src="./work-07.png" width="50%;" alt="Alicia" style="height: 150px;">
-      <p class="w3-large">Disciplina</p>
-      <p>Alicia Alonso fue bailarina por 7 decadas y nunca se sintio llegar a la cima de su carrera profesional. Siempre encontraba que aun no llegaba a medida que deseaba estar. Por eso, su disciplina en el baile fue muy estricto.</p>
+        </div>
+        <div class="w3-col l4 m4 w3-margin-bottom"></div>
     </div>
-    <div class="w3-quarter">
-      <img src="./alicia-03.jpg" width="50%;" alt="Alicia Joven" style="height: 150px;">
-      <p class="w3-large">Pasión</p>
-      <p>Alicia Alonso desde muy joven sintio una gran pasion por el baile cuya pasion la convirtio en la primera y absoluta bailarina del mundo.</p>
+
+
+    <!-- Seccion About -->
+    <div class="w3-container w3-teal" id="about">
+
+        <h3 class="w3-center">ACERCA DEL INSTITUTO UNIVERSITARIO</h3>
+        <p class="w3-center"><span></span> <a class="w3-button w3-blue w3-text-white"
+                href="https://drive.google.com/file/d/1SzEztGQglapnvOJdNexQ4DmUKlflYu9y/view?usp=sharing"
+                class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                Director y Fundador</a></p>
+        <br>
+        <div class="w3-card w3-large w3-container w3-white" style="padding: 60px">
+
+            <p>
+                La Fundación de la Danza “Alicia Alonso”, cuenta con un Patrimonio Histórico valorado en más de dos
+                millones de euros. En el año 2000 el centro de denominación específica, Instituto Superior de Danza
+                «Alicia Alonso», a través de la Orden 3908/2000 de la Consejería de Educación de la Comunidad de Madrid,
+                posee autonomía pedagógica de organización y gestión de acuerdo con la Disposición Adicional Sexta
+                relativa a la autonomía de los centros de enseñanzas artísticas superiores del RD 1614/2009 de 3 de mayo
+                Sobre enseñanzas artísticas superiores.
+            </p>
+
+
+            <p>
+                A lo largo de casi tres décadas de existencia ha cosechado gran prestigio a nivel nacional, europeo e
+                internacional. Fue, el primer centro de estudios superiores de danza autorizado en España. Dentro de sus
+                méritos más relevantes destaca el haber introducido los primeros estudios oficiales de grado, postgrado
+                y doctorado en Artes Escénicas en la universidad española. Ocupa dentro de los centros de enseñanzas
+                artísticas superiores una posición privilegiada en cuanto a movilidad internacional de estudiantes, a
+                través de los programas Erasmus, Erasmus Munde, financiado a través del programa Universia del Banco
+                Santander, Erasmus Internacional y Red mundial de la Cátedra UNESCO de Universidades y Centros de
+                Enseñanzas Artísticas Superiores de la cual forma parte, además de la Red de Universidades de Arte de
+                Latinoamérica (RUA). Asimismo, su profesorado es beneficiario del programa de movilidad internacional de
+                la Comisión Europea K 107.
+
+                Desde 2005 se coloca a la cabeza en el ranking de los centros de excelencia artística, al obtener el
+                “Premio Nacional Cultura Viva” a la mejor
+                institución de Enseñanzas Artísticas Superiores de Danza. Este reconocimiento fue otorgado por un jurado
+                compuesto por destacadas personalidades del Consejo Superior
+                de Investigaciones Científicas y de la Cultura, teniendo en cuenta su excelencia académica, su impulso a
+                la creación artística de calidad y su proyección internacional.
+                Asimismo, recibió el Grand Prix en el Concurso Internacional Alassio 2014 por su labor pedagógica
+                internacional y en 2018 recibió junto al bailarín Julio Boca,
+                el Grand Prix Ciudad de Barcelona por sus aportaciones a la enseñanza de la danza, entre otros muchos
+                reconocimientos nacionales e internacionales."
+            </p>
+            <p>
+                El Instituto Superior de Danza «Alicia Alonso» es un centro de denominación específica de la Fundación
+                Pública “Alicia Alonso” adscrito a la Universidad Rey
+                Juan Carlos, goza de autonomía pedagógica, de organización y gestión. Posee dos compañías profesionales,
+                unidades de prácticas profesionales de la
+                Fundación, el Ballet de Cámara de Madrid y la Compañía de Teatro de Cámara, ambas, vinculadas a redes de
+                teatros, espacios culturales y
+                festivales nacionales e internacionales. En la actualidad cuentan con un amplio repertorio y han
+                estrenado más de 190 obras originales de danza y danza-teatro.
+            </p>
+            <p>
+                Experiencia formativa 360º
+                Una formación 360º adaptada a tu tiempo, intereses y necesidades profesionales.
+                Formación académica universitaria de cuatro años, estudios de posgrado a través de nuestra oferta de
+                másteres y acceso a programas de doctorado
+            </p>
+            <p>La elección de nuestros estudios académicos garantiza una formación de calidad de cuatro años, con una
+                práctica escénica constante y la capacitación para optar
+                por múltiples salidas profesionales que ofrecen los estudios de Grado en Artes Visuales y Danza y Título
+                Superior de Danza.</p>
+        </div>
+
+
+        <h3 class="w3-large w3-center">La Danza es Magia</h3>
+        <p class="w3-center"> Documental de Alma Llerena</p>
+        <span><a class="w3-button w3-black w3-text-white"
+                href="https://drive.google.com/file/d/1bD_zwACbFkBtYbogRdbYJHrSf1TaK54i/view"
+                class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                Video I</a>
+            <br><br>
+
+            <a class="w3-button w3-black w3-text-white"
+                href="https://drive.google.com/file/d/1HaE8awpZuJlS-LyoXyhz5ClexvE3SSL8/view"
+                class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                Video II</a>
+            <br><br>
+            <a class="w3-button w3-black w3-text-white"
+                href="https://drive.google.com/file/d/1siszFcUE44tt2jwmo_-P6amiHkuMQ6iJ/view"
+                class="w3-button w3-black"><i class="fa fa-play  w3-padding"> </i>
+                Video III</a>
+            <br><br>
+            <a class="w3-button w3-black w3-text-white"
+                href="https://drive.google.com/file/d/1muaQ3XzGoiqf2Nu6FHyLuFaoziRMm6Pv/view"
+                class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                Video IV</a><br></br></span>
+
     </div>
-    <div class="w3-quarter">
-      <img src="./alicia-07.jpg" width="50%;" alt="Alicia Joven" style="height: 150px;">
-      <p class="w3-large">Consagración</p>
-      <p>Alicia Alonso siempre estuvo consagrada a lo que tanto amaba: la danza clásica. El ballet fue su mayor felicidad durante toda su vida.</p>
+
+    <div class="w3-container w3-gray" style="">
+        <h3 class="w3-center">ESPECIAL CAMPUS TOUR</h3>
+        <br>
+        <iframe width="100%" height="400px" class="w3-center" src="https://www.youtube.com/embed/D4cg6yHivuI"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="w3-container w3-white">
+            <p class="w3-left w3-large">El Campus Tour es una experiencia personalizada para conocer el funcionamiento
+                del Instituto Superior de Danza Alicia Alonso.
+
+                Podrás conocer, de forma presencial, el funcionamiento de las actividades académicas, realizar un
+                recorrido detallado por el Campus y visitar sus instalaciones. Podrás ver el funcionamiento de las aulas
+                prácticas y teóricas, y disfrutar de la actividad universitaria del día a día.</p>
+        </div>
+
+        <p> <a class="w3-button w3-black w3-text-white"
+                href="https://drive.google.com/file/d/1SdN8VrWICNZfiRS4O71hHQdT4lR92xz1/view?usp=sharing"
+                class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                Video Promocional</a></p>
+
     </div>
-    <div class="w3-quarter">
-      <img src="./alicia-04.jpg" width="50%;" alt="Alicia Joven" style="height: 150px;">
-      <p class="w3-large">Legado</p>
-      <p>Alicia Alonso fundo el Ballet Nacional de Cuba y otros numerosas compania en el resto del mundo. Hizo aportes a todos las obras de ballet comenzando con Giselle.</p>
+
+
+    <div class="w3-container w3-purple" style="">
+        <h3 class="w3-center"> PRUEBA DE ACCESO</h3>
+        <br>
+
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/6a1SsGVuvWs" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+            allowfullscreen></iframe>
+
+        <div class="w3-container w3-white" style="padding:50px 25px">
+            <h1 class="w3-center w3-xlarge">Grado en Artes Visuales y Danza con Mención</h1>
+            <h2 class="w3-center w3-large">Normativa pruebas de acceso</h2>
+            <p class="w3-left w3-large">El Grado en Artes Visuales y Danza con Menciones es una titulación compartida
+                con la Universidad Rey Juan Carlos que desarrolla el Instituto Universitario de la Danza «Alicia Alonso»
+                que tiene a su cargo el 87% de los contenidos
+                Está dirigido a estudiantes de Grado Medio o formación equivalente en centros privados o Bachillerato,
+                con aptitudes para el teatro musical, teatro físico del movimiento, la creación audiovisual y otras
+                disciplinas afines.
+                Requerirá el título de bachiller o equivalente y la superación de la prueba de evaluación del
+                bachillerato español y de la prueba especifica de acceso para cada menciones del Grado.
+                Al margen de las titulaciones oficiales exigibles para el acceso a la Universidad, se requiere una
+                Prueba de Acceso específica.</p>
+            <br>
+            <br>
+
+            <h1 class="w3-center w3-xlarge">Grado en Enseñanzas Artísticas Superiores de Danza</h1>
+            <h2 class="w3-center w3-large">Normativa pruebas de acceso</h2>
+            <p class="w3-center w3-large">Requerirá el título de bachiller o equivalente y la superación de la prueba
+                especifica de acceso para cada especialidad. </p>
+        </div>
     </div>
-  </div>
- </div>
-  
-  <div class="w3-container w3-blue">
-    <div class="w3-col l4 m4 w3-margin-bottom"></div>
-    <div class="w3-col l4 m4 w3-margin w3-center">
-      <div class="w3-circle">
-     <iframe style="border-radius:5%" width="90%" height="350px" src="https://www.youtube.com/embed/krcmx4vdeTU" title="YouTube video player" frameborder="0" allowFullScreen allowfullscreen></iframe>
-     </div>
-     
-    </div>
-     <div class="w3-col l4 m4 w3-margin-bottom"></div>
-  </div>
 
 
- <!-- Seccion About -->
-<div class="w3-container w3-teal" id="about">
- 
-  <h3 class="w3-center">ACERCA DEL INSTITUTO UNIVERSITARIO</h3>
-  <p class="w3-center"><span></span>  <a class="w3-button w3-blue w3-text-white"  href="https://drive.google.com/file/d/1SzEztGQglapnvOJdNexQ4DmUKlflYu9y/view?usp=sharing" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i> 
-       Director y Fundador</a></p>
-  <br>
-  <div class="w3-card w3-large w3-container w3-white"  style="padding: 60px">
- 
-    <p>
-    La Fundación de la Danza “Alicia Alonso”, cuenta con un Patrimonio Histórico valorado en más de dos millones de euros. En el año 2000 el centro de denominación específica, Instituto Superior de Danza «Alicia Alonso», a través de la Orden 3908/2000 de la Consejería de Educación de la Comunidad de Madrid, posee autonomía pedagógica de organización y gestión de acuerdo con la Disposición Adicional Sexta relativa a la autonomía de los centros de enseñanzas artísticas superiores del RD 1614/2009 de 3 de mayo Sobre enseñanzas artísticas superiores.
-    </p>
 
-
-    <p>
-    A lo largo de casi tres décadas de existencia ha cosechado gran prestigio a nivel nacional, europeo e internacional. Fue, el primer centro de estudios superiores de danza autorizado en España. Dentro de sus méritos más relevantes destaca el haber introducido los primeros estudios oficiales de grado, postgrado y doctorado en Artes Escénicas en la universidad española. Ocupa dentro de los centros de enseñanzas artísticas superiores una posición privilegiada en cuanto a movilidad internacional de estudiantes, a través de los programas Erasmus, Erasmus Munde, financiado a través del programa Universia del Banco Santander, Erasmus Internacional y Red mundial de la Cátedra UNESCO de Universidades y Centros de Enseñanzas Artísticas Superiores de la cual forma parte, además de la Red de Universidades de Arte de Latinoamérica (RUA). Asimismo, su profesorado es beneficiario del programa de movilidad internacional de la Comisión Europea K 107.
-
-Desde 2005 se coloca a la cabeza en el ranking de los centros de excelencia artística, al obtener el “Premio Nacional Cultura Viva” a la mejor 
-      institución de Enseñanzas Artísticas Superiores de Danza. Este reconocimiento fue otorgado por un jurado compuesto por destacadas personalidades del Consejo Superior
-      de Investigaciones Científicas y de la Cultura, teniendo en cuenta su excelencia académica, su impulso a la creación artística de calidad y su proyección internacional.
-      Asimismo, recibió el Grand Prix en el Concurso Internacional Alassio 2014 por su labor pedagógica internacional y en 2018 recibió junto al bailarín Julio Boca,
-      el Grand Prix Ciudad de Barcelona por sus aportaciones a la enseñanza de la danza, entre otros muchos reconocimientos nacionales e internacionales."
-    </p>
-    <p>
-    El Instituto Superior de Danza «Alicia Alonso» es un centro de denominación específica de la Fundación Pública “Alicia Alonso” adscrito a la Universidad Rey
-      Juan Carlos, goza de autonomía pedagógica, de organización y gestión.  Posee dos compañías profesionales, unidades de prácticas profesionales de la
-      Fundación, el Ballet de Cámara de Madrid y la Compañía de Teatro de Cámara, ambas, vinculadas a  redes de teatros, espacios culturales y
-      festivales nacionales e internacionales. En la actualidad cuentan con un amplio repertorio y han estrenado más de 190 obras originales de danza y danza-teatro. 
-    </p>
-    <p>
-      Experiencia formativa 360º
-Una formación 360º adaptada a tu tiempo, intereses y necesidades profesionales.
-Formación académica universitaria de cuatro años, estudios de posgrado a través de nuestra oferta de másteres y acceso a programas de doctorado
-    </p>
-    <p>La elección de nuestros estudios académicos garantiza una formación de calidad de cuatro años, con una práctica escénica constante y la capacitación para optar
-      por múltiples salidas profesionales que ofrecen los estudios de Grado en Artes Visuales y Danza y Título Superior de Danza.</p>
-  </div>
-
-
-    <h3 class="w3-large w3-center">La Danza es Magia</h3>
-    <p class="w3-center"> Documental de Alma Llerena</p>
-    <span><a class="w3-button w3-black w3-text-white" href="https://drive.google.com/file/d/1bD_zwACbFkBtYbogRdbYJHrSf1TaK54i/view" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
-       Video I</a>
-    <br><br>
-        
-    <a class="w3-button w3-black w3-text-white"  href="https://drive.google.com/file/d/1HaE8awpZuJlS-LyoXyhz5ClexvE3SSL8/view" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i> 
-      Video II</a>
-     <br><br>
-    <a  class="w3-button w3-black w3-text-white" href="https://drive.google.com/file/d/1siszFcUE44tt2jwmo_-P6amiHkuMQ6iJ/view" class="w3-button w3-black"><i class="fa fa-play  w3-padding"> </i>
-      Video III</a>
-      <br><br>
-    <a  class="w3-button w3-black w3-text-white" href="https://drive.google.com/file/d/1muaQ3XzGoiqf2Nu6FHyLuFaoziRMm6Pv/view" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i> 
-          Video IV</a><br></br></span>
-
-  </div>
-  
-  <div class="w3-container w3-gray" style="">
-    <h3 class="w3-center">ESPECIAL CAMPUS TOUR</h3>
-    <br>
-    <iframe width="100%" height="400px" class="w3-center" src="https://www.youtube.com/embed/D4cg6yHivuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     <div class="w3-container w3-white">
-    <p class="w3-left w3-large">El Campus Tour es una experiencia personalizada para conocer el funcionamiento del Instituto Superior de Danza Alicia Alonso.
-     
-      Podrás conocer, de forma presencial, el funcionamiento de las actividades académicas, realizar un recorrido detallado por el Campus y visitar sus instalaciones. Podrás ver el funcionamiento de las aulas prácticas y teóricas, y disfrutar de la actividad universitaria del día a día.</p>
-  </div>
-    
-    <p> <a  class="w3-button w3-black w3-text-white"  href="https://drive.google.com/file/d/1SdN8VrWICNZfiRS4O71hHQdT4lR92xz1/view?usp=sharing" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i> 
-          Video Promocional</a></p>
-    
-  </div>
-
- 
-  <div class="w3-container w3-purple" style="">
-     <h3 class="w3-center"> PRUEBA DE ACCESO</h3>
-    <br>
- 
-    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/6a1SsGVuvWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope" allowfullscreen></iframe>
-
-    <div class="w3-container w3-white" style="padding:50px 25px">
-    <h1 class="w3-center w3-xlarge">Grado en Artes Visuales y Danza con Mención</h1>
-    <h2 class="w3-center w3-large">Normativa pruebas de acceso</h2>
-    <p class="w3-left w3-large">El Grado en Artes Visuales y Danza con Menciones es una titulación compartida con la Universidad Rey Juan Carlos que desarrolla el Instituto Universitario de la Danza «Alicia Alonso» que tiene a su cargo el 87% de los contenidos
-      Está dirigido a estudiantes de Grado Medio o formación equivalente en centros privados o Bachillerato,  con aptitudes para el teatro musical, teatro físico del movimiento, la creación audiovisual y otras disciplinas afines.      
-      Requerirá el título de bachiller o equivalente y la superación de la prueba de evaluación del bachillerato español y de la prueba especifica de acceso para cada menciones del Grado.
-      Al margen de las titulaciones oficiales exigibles para el acceso a la Universidad, se requiere una Prueba de Acceso específica.</p> 
-    <br>
-    <br>
-    
-    <h1 class="w3-center w3-xlarge">Grado en Enseñanzas Artísticas Superiores de Danza</h1>
-     <h2 class="w3-center w3-large">Normativa pruebas de acceso</h2>
-    <p class="w3-center w3-large">Requerirá el título de bachiller o equivalente y la superación de la prueba especifica de acceso para cada especialidad. </p>
-  </div>
-  </div>
-  
- 
-  
-  <!-- Seccion Documentos -->
-<!--
+    <!-- Seccion Documentos -->
+    <!--
 <div class="w3-container w3-purple" style="padding:128px 16px">
   <div class="w3-container w3-white">
   <h3 class="w3-center">DOCUMENTOS QUE SE NECESITAN PARA MATRICULAR</h3>
@@ -294,637 +374,792 @@ Formación académica universitaria de cuatro años, estudios de posgrado a trav
 </div>
  </div>
 -->
-  
 
 
 
 
 
-<!-- Team Section -->
-<div class="w3-container w3-pink" style="" id="team">
-  <h3 class="w3-center">EQUIPO</h3>
-  <p class="w3-center w3-large">Directivos</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l4 m4 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://academiadelasartesescenicas.es/imagenes/contenido/socios/alberto-garca-castao.-foto-bn-2.jpg" alt="Alberto" style="width:100%; height: 300px;">
-        <div class="w3-container w3-white">
-          <h3 class="w3-center">Alberto Garcia Castano</h3>
-          <p class="w3-opacity">Director General</p>
-          <p>Instituto Universitario de la Danza Alicia Alonso</p>
-          <p><a class="w3-button w3-black w3-text-white" href="https://academiadelasartesescenicas.es/alberto-garcia-castano/">Leer más</a></p>
-         
+
+    <!-- Team Section -->
+    <div class="w3-container w3-pink" style="" id="team">
+        <h3 class="w3-center">EQUIPO</h3>
+        <p class="w3-center w3-large">Directivos</p>
+        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+            <div class="w3-col l4 m4 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="https://academiadelasartesescenicas.es/imagenes/contenido/socios/alberto-garca-castao.-foto-bn-2.jpg"
+                        alt="Alberto" style="width:100%; height: 300px;">
+                    <div class="w3-container w3-white">
+                        <h3 class="w3-center">Alberto Garcia Castano</h3>
+                        <p class="w3-opacity">Director General</p>
+                        <p>Instituto Universitario de la Danza Alicia Alonso</p>
+                        <p><a class="w3-button w3-black w3-text-white"
+                                href="https://academiadelasartesescenicas.es/alberto-garcia-castano/">Leer más</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l4 m4 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="https://iudaacampusarte.org/wp-content/uploads/2020/06/amador-cernuda-iudaa.jpg"
+                        alt="Amador" style="width:100%; height: 300px;">
+                    <div class="w3-container w3-white">
+                        <h3 class="w3-center">Amador Cernuda Lago</h3>
+                        <p class="w3-opacity">Subdirector</p>
+                        <p>Instituto Universitario de la Danza Alicia Alonso</p>
+                        <p><a class="w3-button w3-black w3-text-white"
+                                href="https://iudaacampusarte.org/personnel/amador-cernuda-lago/">Leer más</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l4 m4 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="https://iudaacampusarte.org/wp-content/uploads/2020/06/luis-llerena.jpg" alt="Lewis"
+                        style="width:100%; height: 300px;">
+                    <div class="w3-container w3-white">
+                        <h3 class="w3-center">Luis Llerena Diaz</h3>
+                        <p class="w3-opacity">Secretario General</p>
+                        <p>Instituto Universitario de la Danza Alicia Alonso</p>
+                        <p><a class="w3-button w3-black w3-text-white"
+                                href="  https://iudaacampusarte.org/personnel/luis-llerena/">Leer más</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l4 m4 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://iudaacampusarte.org/wp-content/uploads/2020/06/amador-cernuda-iudaa.jpg" alt="Amador" style="width:100%; height: 300px;">
-        <div class="w3-container w3-white">
-          <h3 class="w3-center">Amador Cernuda Lago</h3>
-          <p class="w3-opacity">Subdirector</p>
-          <p>Instituto Universitario de la Danza Alicia Alonso</p>
-           <p><a class="w3-button w3-black w3-text-white" href="https://iudaacampusarte.org/personnel/amador-cernuda-lago/">Leer más</a></p>
-        
+
+
+
+
+
+        <!-- Profesores Section -->
+        <div class="w3-container w3-pink" style="margin-top:10px;" id="team">
+            <h3 class="w3-center">Profesores</h3>
+            <p class="w3-center w3-large"></p>
+            <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-container">
+                        <img class="w3-circle"
+                            src="https://iudaacampusarte.org/wp-content/uploads/2020/12/Oscar-Torrad.png"
+                            alt="Oscar-Torrad" style="width:100%; height: 300px;">
+                        <div class="w3-container">
+                            <h3 class="w3-center">Óscar Torrado del Puerto</h3>
+                            <p class="w3-opacity">Director Artístico y Responsable de la Mención Danza Clásica del Grado
+                                en Artes Visuales y Danza y Título Superior de Danza (IUDAA-URJC).</p>
+                            <p><a href="https://iudaacampusarte.org/personnel/oscar-torrado-del-puerto/"
+                                    class="w3-bar-item w3-button">Conozca más sobre Oscar </a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-container">
+                        <img class="w3-circle"
+                            src="https://iudaacampusarte.org/wp-content/uploads/2020/06/gloria-m-iudaa.jpg"
+                            alt="Gloria Garcia Arambarry" style="width:100%; height: 300px;">
+                        <div class="w3-container">
+                            <h3 class="w3-center">Gloria García Arambarry</h3>
+                            <p class="w3-opacity">Doctora en Artes con la calificación de Suma Cum Laude, Universidad
+                                Rey Juan Carlos. Responsable de Mención Danza Contemporánea. Coordinadora de proyectos
+                                internacionales. Secretaria General del Comité Internacional de la Danza del Instituto
+                                Internacional de Teatro (ITI).</p>
+                            <p><a href="https://iudaacampusarte.org/personnel/gloria-garcia-arambarry/"
+                                    class="w3-bar-item w3-button">Conozca más sobre Gloria </a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-container">
+                        <img class="w3-circle"
+                            src="https://iudaacampusarte.org/wp-content/uploads/2020/06/javier-e-otero.jpg"
+                            alt="Javier Otero Garcia" style="width:100%; height: 300px;">
+                        <div class="w3-container">
+                            <h3 class="w3-center">Javier Otero García</h3>
+                            <p class="w3-opacity">Profesor del Grado en Artes Visuales y Danza con Mención:
+                                Entrenamiento de Técnica de Danza Teatro I (Teatro Físico); Taller de Puesta en Escena
+                                de Danza Teatro I (Teatro Físico); Escenografía e Iluminación;
+                                Master Universitario en Creación e Interpretación Musical: Gesto y Movimiento.</p>
+                            <p><a href="https://iudaacampusarte.org/personnel/javier-otero-garcia/"
+                                    class="w3-bar-item w3-button">Conozca más sobre Javier </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-container">
+                        <img class="w3-circle"
+                            src="https://iudaacampusarte.org/wp-content/uploads/2020/06/jm-buzon-docente.jpg"
+                            alt="Jose Manuel Buzon Ruiz" style="width:100%; height: 300px;">
+                        <div class="w3-container">
+                            <h3 class="w3-center">José Manuel Buzón Ruiz</h3>
+                            <p class="w3-opacity">Docente investigador de la Mención Danza Española del Grado en Artes
+                                Visuales y Danza y Título Superior de Danza (IUDAA-URJC). Responsable de Mención Danza
+                                Española.</p>
+                            <p><a href="https://iudaacampusarte.org/personnel/jose-manuel-buzon-ruiz/"
+                                    class="w3-bar-item w3-button">Conozca más sobre Jose Manuel </a></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-pink" style="margin-top:64px">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-container">
+                        <img class="w3-circle"
+                            src="https://iudaacampusarte.org/wp-content/uploads/2021/06/Jorge-Gallego-.png"
+                            alt="Oscar-Torrad" style="width:100%; height: 300px;">
+                        <div class="w3-container">
+                            <h3 class="w3-center">Jorge Gallego</h3>
+                            <p class="w3-opacity">Profesor de la mención Danza Acrobática y Circense y Danza Teatro del
+                                Grado en Artes Visuales y Danza (IUDAA-URJC).Doctor Cum Laude en Artes Escénicas por la
+                                Universidad Rey Juan Carlos.
+                                Máster en Artes Escénicas por el Instituto Universitario de la Danza «Alicia Alonso» de
+                                la Universidad Rey Juan Carlos.</p>
+                            <p><a href="https://iudaacampusarte.org/personnel/jose-manuel-munoz-bueno/"
+                                    class="w3-bar-item w3-button">Conozca más sobre Jorge </a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-container">
+                        <img class="w3-circle"
+                            src="https://iudaacampusarte.org/wp-content/uploads/2020/06/carlos-roldan-profesor.jpg"
+                            alt="Carlos Roldan" style="width:100%; height: 300px;">
+                        <div class="w3-container">
+                            <h3 class="w3-center">Carlos Roldán</h3>
+                            <p class="w3-opacity">Profesor Titular Interino Estética y Teoría de las Artes URJC.
+                                Profesor Máster Oficial de Artes Escénicas ISDAA-URJC. Coordinador Área de Teoría de las
+                                Artes Escénicas y Ciencias Aplicadas ISDAA-URJC
+                                Profesor Escuela Internacional de Doctorado.</p>
+                            <p><a href="https://iudaacampusarte.org/personnel/carlos-roldan/"
+                                    class="w3-bar-item w3-button">Conozca más sobre Carlos </a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-container">
+                        <img class="w3-circle"
+                            src="https://iudaacampusarte.org/wp-content/uploads/2020/06/ioshi-n-sanler-profesor.jpg"
+                            alt="Jose Manuel Buzon Ruiz" style="width:100%; height: 300px;">
+                        <div class="w3-container">
+                            <h3 class="w3-center">Ioshinobu Navarro</h3>
+                            <p class="w3-opacity">Doctor Cum Laude en Artes y Humanidades por la Universidad Rey Juan
+                                Carlos de Madrid.
+                                Miembro de la Academia de las Artes Escénicas de España. Bailarín, coreógrafo y maestro
+                                de Danza.</p>
+                            <p><a href="https://iudaacampusarte.org/personnel/ioshinobu-navarro-sanler/"
+                                    class="w3-bar-item w3-button">Conozca más sobre Ioshinobu </a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-container">
+                        <img class="w3-circle"
+                            src="http://blog.arhoteles.com/wp-content/uploads/2019/05/segovia-en-danza.jpg"
+                            alt="Gemma Pages" style="width:100%; height: 300px;">
+                        <div class="w3-container">
+                            <h3 class="w3-center">Gemma Pages</h3>
+                            <p class="w3-opacity">Planificación de recursos para la docencia</p>
+                            <p>gemma.pages@alicialonso.org</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l4 m4 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://iudaacampusarte.org/wp-content/uploads/2020/06/luis-llerena.jpg" alt="Lewis" style="width:100%; height: 300px;">
-        <div class="w3-container w3-white">
-          <h3 class="w3-center">Luis Llerena Diaz</h3>
-          <p class="w3-opacity">Secretario General</p>
-          <p>Instituto Universitario de la Danza Alicia Alonso</p>
-           <p><a class="w3-button w3-black w3-text-white" href="  https://iudaacampusarte.org/personnel/luis-llerena/">Leer más</a></p>
+
+
+        <div class="w3-row w3-pink" style="padding:128px 16px">
+            <div class="w3-col m4 l4 w3-center">
+                <div class="w3-container">
+                    <img class="w3-circle"
+                        src="https://iudaacampusarte.org/wp-content/uploads/2020/05/leticia-p-cid-iudaa.jpg"
+                        alt="Leticia Perez" style="width:100%; height: 300px;">
+                    <div class="w3-container">
+                        <h3 class="w3-center">Leticia Pérez Cid</h3>
+                        <p class="w3-opacity">Personal docente investigador del Grado en Artes Visuales Danza y Título
+                            Superior de Danza (IUDAA-URJC). Maître de Danza Española. Destacada investigadora y pedagoga
+                            de Historia de la Danza, en particular de la danza española y el flamenco. </p>
+                        <p><a href="https://iudaacampusarte.org/personnel/leticia-perez-cid/"
+                                class="w3-bar-item w3-button">Conozca más sobre Leticia </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 l4 w3-center">
+                <div class="w3-container w3-pink">
+                    <img class="w3-circle"
+                        src="https://iudaacampusarte.org/wp-content/uploads/2020/07/victor-barbera.jpg"
+                        alt="Victor Manuel Barbera Hernandez" style="width:100%; height: 300px;">
+                    <div class="w3-container">
+                        <h3 class="w3-center">Víctor Manuel Barberá Hernández</h3>
+                        <p class="w3-opacity">Profesor del Grado en Artes Visuales y Danza y Título Superior de Danza.
+                        </p>
+                        <p><a href="https://iudaacampusarte.org/personnel/victor-manuel-barbera-hernandez/"
+                                class="w3-bar-item w3-button">Conozca más sobre Victor </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 l4 w3-center">
+                <div class="w3-container w3-pink">
+                    <img class="w3-circle"
+                        src="https://iudaacampusarte.org/wp-content/uploads/2020/07/Levo-profesor.jpg" alt="Victor "
+                        style="width:100%; height: 300px;">
+                    <div class="w3-container">
+                        <h3 class="w3-center">Levent Haluk Karatas</h3>
+                        <p class="w3-opacity">Profesor del Grado en Artes Visuales y Danza (URJC-IUDAA) y del Título
+                            Superior de Danza (ISDAA)</p>
+                        <p><a href="https://iudaacampusarte.org/personnel/levent-haluk-karatas/"
+                                class="w3-bar-item w3-button">Conozca más sobre Levent</a></p>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  
-  
-  
-  
-<!-- Profesores Section -->
-<div class="w3-container w3-pink" style="margin-top:10px;" id="team">
-  <h3 class="w3-center">Profesores</h3>
-  <p class="w3-center w3-large"></p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-container">
-        <img class="w3-circle" src="https://iudaacampusarte.org/wp-content/uploads/2020/12/Oscar-Torrad.png" alt="Oscar-Torrad" style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center" >Óscar Torrado del Puerto</h3>
-          <p class="w3-opacity">Director Artístico y Responsable de la Mención Danza Clásica del Grado en Artes Visuales y Danza y Título Superior de Danza (IUDAA-URJC).</p>
-          <p><a href="https://iudaacampusarte.org/personnel/oscar-torrado-del-puerto/"  class="w3-bar-item w3-button">Conozca más sobre Oscar </a></p>
-         
+    </div>
+
+    <!-- Seccion Experienci -->
+
+    <div class="w3-container w3-large w3-blue">
+        <h3 class="w3-center">EXPERIENCIA</h3>
+        <div class="w3-card w3-large w3-container w3-white" style="padding: 60px">
+            <p class="w3-left">A lo largo de casi tres décadas de existencia ha cosechado gran prestigio a nivel
+                nacional, europeo e internacional. Fue, el primer centro de estudios superiores de danza autorizado en
+                España. Dentro de sus méritos más relevantes destaca el haber introducido los primeros estudios
+                oficiales de grado, postgrado y doctorado en Artes Escénicas en la universidad española. Ocupa dentro de
+                los centros de enseñanzas artísticas superiores una posición privilegiada en cuanto a movilidad
+                internacional de estudiantes, a través de los programas Erasmus, Erasmus Munde, financiado a través del
+                programa Universia del Banco Santander, Erasmus Internacional y Red mundial de la Cátedra UNESCO de
+                Universidades y Centros de Enseñanzas Artísticas Superiores de la cual forma parte, además de la Red de
+                Universidades de Arte de Latinoamérica (RUA). Asimismo, su profesorado es beneficiario del programa de
+                movilidad internacional de la Comisión Europea K 107.
+
+                Desde 2005 se coloca a la cabeza en el ranking de los centros de excelencia artística, al obtener el
+                “Premio Nacional Cultura Viva” a la mejor institución de Enseñanzas Artísticas Superiores de Danza. Este
+                reconocimiento fue otorgado por un jurado compuesto por destacadas personalidades del Consejo Superior
+                de Investigaciones Científicas y de la Cultura, teniendo en cuenta su excelencia académica, su impulso a
+                la creación artística de calidad y su proyección internacional. Asimismo, recibió el Grand Prix en el
+                Concurso Internacional Alassio 2014 por su labor pedagógica internacional y en 2018 recibió junto al
+                bailarín Julio Boca, el Grand Prix Ciudad de Barcelona por sus aportaciones a la enseñanza de la danza,
+                entre otros muchos reconocimientos nacionales e internacionales.</p>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-container">
-        <img class="w3-circle" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/gloria-m-iudaa.jpg" alt="Gloria Garcia Arambarry" style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center">Gloria García Arambarry</h3>
-          <p class="w3-opacity">Doctora en Artes con la calificación de Suma Cum Laude, Universidad Rey Juan Carlos. Responsable de Mención Danza Contemporánea. Coordinadora de proyectos internacionales. Secretaria General del Comité Internacional de la Danza del Instituto Internacional de Teatro (ITI).</p>
-          <p><a href="https://iudaacampusarte.org/personnel/gloria-garcia-arambarry/"  class="w3-bar-item w3-button">Conozca más sobre Gloria </a></p>
-        
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-container">
-        <img class="w3-circle" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/javier-e-otero.jpg" alt="Javier Otero Garcia" style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center">Javier Otero García</h3>
-          <p class="w3-opacity">Profesor del Grado en Artes Visuales y Danza con Mención: Entrenamiento de Técnica de Danza Teatro I (Teatro Físico); Taller de Puesta en Escena de Danza Teatro I (Teatro Físico); Escenografía e Iluminación;
-Master Universitario en Creación e Interpretación Musical: Gesto y Movimiento.</p>
-         <p><a href="https://iudaacampusarte.org/personnel/javier-otero-garcia/"  class="w3-bar-item w3-button">Conozca más sobre Javier </a></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-container">
-        <img class="w3-circle" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/jm-buzon-docente.jpg" alt="Jose Manuel Buzon Ruiz" style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center">José Manuel Buzón Ruiz</h3>
-          <p class="w3-opacity">Docente investigador de la Mención Danza Española del Grado en Artes Visuales y Danza y Título Superior de Danza (IUDAA-URJC). Responsable de Mención Danza Española.</p>
-          <p><a href="https://iudaacampusarte.org/personnel/jose-manuel-buzon-ruiz/"  class="w3-bar-item w3-button">Conozca más sobre Jose Manuel </a></p>
-       
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="w3-row-padding w3-pink" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-container">
-        <img class="w3-circle" src="https://iudaacampusarte.org/wp-content/uploads/2021/06/Jorge-Gallego-.png" alt="Oscar-Torrad" style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center">Jorge Gallego</h3>
-          <p class="w3-opacity">Profesor de la mención Danza Acrobática y Circense y Danza Teatro del Grado en Artes Visuales y Danza (IUDAA-URJC).Doctor Cum Laude en Artes Escénicas por la Universidad Rey Juan Carlos.
-           Máster en Artes Escénicas por el Instituto Universitario de la Danza «Alicia Alonso» de la Universidad Rey Juan Carlos.</p>
-          <p><a href="https://iudaacampusarte.org/personnel/jose-manuel-munoz-bueno/"  class="w3-bar-item w3-button">Conozca más sobre Jorge </a></p>
-         
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-container">
-        <img class="w3-circle" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/carlos-roldan-profesor.jpg" alt="Carlos Roldan" style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center">Carlos Roldán</h3>
-          <p class="w3-opacity">Profesor Titular Interino Estética y Teoría de las Artes URJC. Profesor Máster Oficial de Artes Escénicas ISDAA-URJC. Coordinador Área de Teoría de las Artes Escénicas y Ciencias Aplicadas ISDAA-URJC
-Profesor Escuela Internacional de Doctorado.</p>
-          <p><a href="https://iudaacampusarte.org/personnel/carlos-roldan/"  class="w3-bar-item w3-button">Conozca más sobre Carlos </a></p>
-        
-        </div>
-      </div>
-    </div>
-   
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-container">
-        <img class="w3-circle" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/ioshi-n-sanler-profesor.jpg" alt="Jose Manuel Buzon Ruiz" style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center">Ioshinobu Navarro</h3>
-          <p class="w3-opacity">Doctor Cum Laude en Artes y Humanidades por la Universidad Rey Juan Carlos de Madrid.
-             Miembro de la Academia de las Artes Escénicas de España. Bailarín, coreógrafo y maestro de Danza.</p>
-          <p><a href="https://iudaacampusarte.org/personnel/ioshinobu-navarro-sanler/"  class="w3-bar-item w3-button">Conozca más sobre Ioshinobu </a></p>
-       
-        </div>
-      </div>
-    </div>
-     <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-container">
-        <img class="w3-circle" src="http://blog.arhoteles.com/wp-content/uploads/2019/05/segovia-en-danza.jpg" alt="Gemma Pages" style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center">Gemma Pages</h3>
-          <p class="w3-opacity">Planificación de recursos para la docencia</p>
-         <p>gemma.pages@alicialonso.org</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  
-            
-    <div class="w3-row w3-pink" style="padding:128px 16px" >
-       <div class="w3-col m4 l4 w3-center">
-            <div class="w3-container">
-        <img class="w3-circle" src="https://iudaacampusarte.org/wp-content/uploads/2020/05/leticia-p-cid-iudaa.jpg" alt="Leticia Perez" style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center">Leticia Pérez Cid</h3>
-          <p class="w3-opacity">Personal docente investigador del Grado en Artes Visuales Danza y Título Superior de Danza (IUDAA-URJC). Maître de Danza Española. Destacada investigadora y pedagoga de Historia de la Danza, en particular de la danza española y el flamenco. </p>
-          <p><a href="https://iudaacampusarte.org/personnel/leticia-perez-cid/"  class="w3-bar-item w3-button">Conozca más sobre Leticia </a></p>
-        </div>
-      </div> 
-        </div>
-       <div class="w3-col m4 l4 w3-center">
-            <div class="w3-container w3-pink">
-        <img class="w3-circle" src="https://iudaacampusarte.org/wp-content/uploads/2020/07/victor-barbera.jpg" alt="Victor Manuel Barbera Hernandez" style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center">Víctor Manuel Barberá Hernández</h3>
-          <p class="w3-opacity">Profesor del Grado en Artes Visuales y Danza y Título Superior de Danza.</p>
-          <p><a href="https://iudaacampusarte.org/personnel/victor-manuel-barbera-hernandez/"  class="w3-bar-item w3-button">Conozca más sobre Victor </a></p>
-        </div>
-      </div> 
-        </div>
-       <div class="w3-col m4 l4 w3-center">
-           <div class="w3-container w3-pink">
-        <img class="w3-circle" src="https://iudaacampusarte.org/wp-content/uploads/2020/07/Levo-profesor.jpg" alt="Victor " style="width:100%; height: 300px;">
-        <div class="w3-container">
-          <h3 class="w3-center">Levent Haluk Karatas</h3>
-          <p class="w3-opacity">Profesor del Grado en Artes Visuales y Danza (URJC-IUDAA) y del Título Superior de Danza (ISDAA)</p>
-          <p><a href="https://iudaacampusarte.org/personnel/levent-haluk-karatas/"  class="w3-bar-item w3-button">Conozca más sobre Levent</a></p>
-       
-        </div>
-      </div>  
-        </div>
-    </div>
-   
-  </div>
-
-<!-- Seccion Experienci -->
-
-<div class="w3-container w3-large w3-blue">
-    <h3 class="w3-center">EXPERIENCIA</h3>
- <div class="w3-card w3-large w3-container w3-white"  style="padding: 60px">
-  <p class="w3-left">A lo largo de casi tres décadas de existencia ha cosechado gran prestigio a nivel nacional, europeo e internacional. Fue, el primer centro de estudios superiores de danza autorizado en España. Dentro de sus méritos más relevantes destaca el haber introducido los primeros estudios oficiales de grado, postgrado y doctorado en Artes Escénicas en la universidad española. Ocupa dentro de los centros de enseñanzas artísticas superiores una posición privilegiada en cuanto a movilidad internacional de estudiantes, a través de los programas Erasmus, Erasmus Munde, financiado a través del programa Universia del Banco Santander, Erasmus Internacional y Red mundial de la Cátedra UNESCO de Universidades y Centros de Enseñanzas Artísticas Superiores de la cual forma parte, además de la Red de Universidades de Arte de Latinoamérica (RUA). Asimismo, su profesorado es beneficiario del programa de movilidad internacional de la Comisión Europea K 107.
-
-Desde 2005 se coloca a la cabeza en el ranking de los centros de excelencia artística, al obtener el “Premio Nacional Cultura Viva” a la mejor institución de Enseñanzas Artísticas Superiores de Danza. Este reconocimiento fue otorgado por un jurado compuesto por destacadas personalidades del Consejo Superior de Investigaciones Científicas y de la Cultura, teniendo en cuenta su excelencia académica, su impulso a la creación artística de calidad y su proyección internacional. Asimismo, recibió el Grand Prix en el Concurso Internacional Alassio 2014 por su labor pedagógica internacional y en 2018 recibió junto al bailarín Julio Boca, el Grand Prix Ciudad de Barcelona por sus aportaciones a la enseñanza de la danza, entre otros muchos reconocimientos nacionales e internacionales.</p>
-</div>
-</div>
-</div>
-
-<!-- Seccion Proyectos -->
-<div class="w3-container w3-black" >
-  <h3 class="w3-center">PROYECTOS INTERNACIONALES</h3>
-  <div class="w3-container w3-large w3-white" style="padding:60px">En los últimos cinco años ha codirigido tres proyectos artísticos  internacionales financiados por la 
-    Comisión Europea dentro del programa Cultura Creativa. El Instituto forma parte del Consejo Ejecutivo del Instituto Internacional de Teatro, Organización
-    Mundial de Artes Escénicas de UNESCO. Ostenta la Presidencia del Comité Internacional de la Danza/UNESCO y es miembro del Consejo Ejecutivo de la Cátedra 
-    UNESCO UNITWIN Universidades y Centros de Enseñanzas Artísticas Superiores. Preside la Delegación Española de la Organización Mundial de Artes Escénicas/UNESCO. 
-  <p class="w3-center"><a href="https://iudaacampusarte.org/proyectos-internacionales/"  class="w3-bar-item w3-button"> Leer Más</a></p>
-  </div>
-</div>
-
-      
- <!-- Testimonios --> 
-      
- <div class="w3-container w3-large w3-red" style="padding:50px 25px ">
-  <div class="w3-center"> 
-  <h3 class="w3-center w3-padding">TESTIMONIO</h3>
-   <br>
-  <img src="tamara-rojo.jpg" alt="Tamara Rojo" width="200"  height="200"/>
-       <h1 class="w3-center"> Tamara Rojo </h1> 
-        
-       <div class="w3-white" style="padding:50px 16px">
-      <p>Tamara Rojo CBE (Montreal, Canadá, 17 de mayo de 1974) es una bailarina y directora de ballet española. En la actualidad es directora artística del English National Ballet en Londres. Anteriormente fue bailarina principal de The Royal Ballet. En enero de 2016 Tamara Rojo se doctoró ‘cum laude’ en la URJC.</p>
- 
-       <p><span>
-        <a class="w3-button w3-blue w3-text-white" href="https://www.tamara-rojo.com/estudios-instituto-alicia-alonso/" >SUS RECUERDOS</a>
-             </span> <br>
-        <br>
-       <span><a class="w3-button w3-red w3-text-white" href="https://es.wikipedia.org/wiki/Tamara_Rojo" >Más sobre Tamara Rojo</a>
-             </span> <br>
-        <br>
-      </p>
-      </div>
-  
-</div>
-</div>
- 
-  
-<!-- Seccion Otros Links -->
-<div class="w3-container w3-black" style="padding:50px 16px">
-    <h3 class="w3-center">Las Artes Escénicas Transformando el Mundo</h3>
-    <div class="w3-container w3-center w3-large w3-white w3-padding">
-      <div class="w3-center" style="margin-top:64px">
-        <span><a class="w3-button w3-black w3-text-white" href="https://drive.google.com/file/d/1pVXiSTRs0jE-O3iGrRLc4F3x1f4Vo7A7/view?usp=sharing" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
-          Video I</a>
-        <br>
-        <br>
-        <a  class="w3-button w3-black w3-text-white"  href="https://drive.google.com/file/d/1K-wDccsdKNMEnoQHhPQwr0I9oL-ZAwQH/view?usp=sharing" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i> 
-          Video II</a>
-         <br>
-        <br>
-        <a  class="w3-button w3-black w3-text-white" href="https://drive.google.com/file/d/1Iv8ANq8uHExOgMViTk3iO5AMu65sTBgN/view?usp=sharing" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
-          Video III</a>
-         <br>
-        <br>
-        <a  class="w3-button w3-black w3-text-white" href="https://drive.google.com/file/d/1DnLNTpqaUdKrz1Z9cbKKZFfRfjUbs3wl/view?usp=sharing" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i> 
-          Video IV</a></span>
-        
-      </div>
-    </div>
-  </div>
-
-  
-  
-
-
-
-  
-<!-- Link de Eventos realizados --->
- <div class="w3-container w3-center w3-black" style="padding:70px 16px" id="eventos">
-   
-   <h3 class="w3=center">Eventos Realizados</h3>
-   
- <!-- Paralex Section --->
-     <section class="section section-light">
-      <h2>SEGOVIA, SPAIN</h2>
-      <p>
-        Ciudad Sede de los Eventos del Instituto Universitario de la Danza "Alicia Alonso"
-      </p>
-    </section>
-
-    <div class="pimg11">
-      <div class="ptext"><span class="border trans"> </span></div>
-    </div>
-
-    <section class="section section-dark">
-      <h2></h2>
-     
-     <span> 
-       
-       <a class="w3-button w3-black w3-text-white"  href="https://drive.google.com/file/d/17O6THpswFbjQrLbkfqGs2yUxSGVYxt6e/view?usp=sharing" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i> 
-          Segovia 2015</a>
-
-     </span>
-     
-    </section>
-
-    <div class="pimg3">
-      <div class="ptext"><span class="border trans"> </span> </div>
-    </div>
-
-    <section class="section section-dark">
-      <h2></h2>
-      <p>
-         <a  class="w3-button w3-black w3-text-white"  href="https://drive.google.com/file/d/1oa7I4LzG4BriYEj8HvlFrq4UynBJT6Sy/view?usp=sharing" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i> 
-          Segovia 2015 Final </a>
-      </p>
-    </section>
-
-   
-    <div class="pimg2">
-      <div class="ptext"><span class="border"></span></div>
-    </div>
-
-    <section class="section section-dark">
-        <h2></h2>
-        <p>
-          <a  class="w3-button w3-black w3-text-white"  href="https://drive.google.com/file/d/1SuGGs-WOv5yO5oBcXGMygsUmx3Mt1AS3/view?usp=sharing" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i> 
-          Primer Concurso</a>
-        </p>
-      </section> 
-  
-   </div>
-      
-      
- <!-- Gallery Section -->
-<br>
-<br>
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">GALERIA</h3>
-  <p class="w3-center w3-large">Trabajos Realizados</p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img  class="sombra" src="./ballet-00.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img class="sombra" src="./work-01.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img class="sombra" src="./work-022.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img class="sombra" src="./work-03.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img class="sombra" src="./work-04.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img  class="sombra"src="./work-05.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img class="sombra" src="./work-06.png" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img class="sombra" src="http://3.bp.blogspot.com/-5RAfnn9nhEM/UPWEdBu74pI/AAAAAAAAAIw/d0DK7h5-m8s/s1600/PRF_5015.jpg" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-  </div>
-  
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img class="sombra" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/sliderbc5.jpg" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img  class="sombra"src="https://iudaacampusarte.org/wp-content/uploads/2020/06/silder4bc.jpg" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img class="sombra" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/slider2bc.jpg" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img class="sombra" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/sliderbc6.jpg" style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
-    </div>
-  </div>
-  
-    <h3 class="w3-center">Videos</h3>
-  
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <iframe width="100%" height = "200px"  src="https://www.youtube.com/embed/iXxjlPfMWOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col l3 m6">
-     <iframe width="100%" height = "200px" src="https://www.youtube.com/embed/sAadxLbJsXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col l3 m6">
-      <iframe width="100%" height = "200px"  src="https://www.youtube.com/embed/4gTn81bP368" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col l3 m6">
-     <iframe width="100%" height = "200px"  src="https://www.youtube.com/embed/S_6j04lhPBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-  
-
-    
-   <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-     <iframe width="100%" height = "200px"  src="https://www.youtube.com/embed/3HPMQI1AjVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col l3 m6">
-    <iframe width="100%" height = "200px" src="https://www.youtube.com/embed/JdbhIohKp0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col l3 m6">
-     <iframe width="100%" height = "200px"  src="https://www.youtube.com/embed/0i4Oz0j4ueg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col l3 m6">
-    <iframe width="100%" height = "200px"  src="https://www.youtube.com/embed/S4MysQ-cU5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-     
-     
-  </div>
-   <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-     <iframe width="100%" height = "200px"  src="https://www.youtube.com/embed/OBEGKTLRTpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col l3 m6">
-    <iframe width="100%" height = "200px" src="https://www.youtube.com/embed/fqAjOwds5yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col l3 m6">
-     <iframe width="100%" height = "200px"  src="https://www.youtube.com/embed/gif_DHOVUxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col l3 m6">
-    <iframe width="100%" height = "200px"  src="https://www.youtube.com/embed/PYA94Y6DC-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-  
-   <p class="w3-center">Homenaje a Alicia Alonso </p>
-    <div class="w3-center">
-       <a  class="lk"  href="https://drive.google.com/file/d/1k6lETt6wGhGy94E0b75BQKk9nG8RV4nY/view?usp=sharing" class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i> 
-          Gala XX Aniversario Instituto Universitario de Danza - Video Completo </a>
-   </div>
-  
-</div>
-  
- 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-
-<!-- Pricing Section -->
-
-
-
-<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
-  <h3>PRECIO</h3>
-  <p class="w3-large">Por Año</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third">
-      <h1 class="w3-dark-grey w3-text-dark-grey"></h1>
     </div>
     
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-green w3-xlarge w3-padding-48">Clases</li>
-        <li class="w3-padding-16"><b></b> Clase I</li>
-        <li class="w3-padding-16"><b></b> Clase II</li>
-        <li class="w3-padding-16"><b></b> Clase III</li>
-        <li class="w3-padding-16"><b></b> Final</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">€ 1000.00 </h2>
-          <span class="w3-opacity">por año</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-    
-          <p class="w3-text-white"><a href="#contact" class="w3-button w3-black w3-padding-large">Matricular</a></p>
-        </li>
-      </ul>
-    </div>
-     <div class="w3-third">
-       <h1 class="w3-dark-grey"></h1>
-     </div>
-    
-  </div>
-</div>
 
-  
-  
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACTAR</h3>
-  <p class="w3-center w3-large">Mantengámonos en contacto. Envíenos un mensaje:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Madrid, España</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +34 914-888-177</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: director.universidad.danza@hotmail.com</p>
+    <!-- Seccion Proyectos -->
+    <div class="w3-container w3-black">
+        <h3 class="w3-center">PROYECTOS INTERNACIONALES</h3>
+        <div class="w3-container w3-large w3-white" style="padding:60px">En los últimos cinco años ha codirigido tres
+            proyectos artísticos internacionales financiados por la
+            Comisión Europea dentro del programa Cultura Creativa. El Instituto forma parte del Consejo Ejecutivo del
+            Instituto Internacional de Teatro, Organización
+            Mundial de Artes Escénicas de UNESCO. Ostenta la Presidencia del Comité Internacional de la Danza/UNESCO y
+            es miembro del Consejo Ejecutivo de la Cátedra
+            UNESCO UNITWIN Universidades y Centros de Enseñanzas Artísticas Superiores. Preside la Delegación Española
+            de la Organización Mundial de Artes Escénicas/UNESCO.
+            <p class="w3-center"><a href="https://iudaacampusarte.org/proyectos-internacionales/"
+                    class="w3-bar-item w3-button"> Leer Más</a></p>
+        </div>
+    </div>
+
+
+    <!-- Testimonios -->
+
+    <div class="w3-container w3-large w3-red" style="padding:50px 25px ">
+        <div class="w3-center">
+            <h3 class="w3-center w3-padding">TESTIMONIO</h3>
+            <br>
+            <img src="tamara-rojo.jpg" alt="Tamara Rojo" width="200" height="200" />
+            <h1 class="w3-center"> Tamara Rojo </h1>
+
+            <div class="w3-white" style="padding:50px 16px">
+                <p>Tamara Rojo CBE (Montreal, Canadá, 17 de mayo de 1974) es una bailarina y directora de ballet
+                    española. En la actualidad es directora artística del English National Ballet en Londres.
+                    Anteriormente fue bailarina principal de The Royal Ballet. En enero de 2016 Tamara Rojo se doctoró
+                    ‘cum laude’ en la URJC.</p>
+
+                <p><span>
+                        <a class="w3-button w3-blue w3-text-white"
+                            href="https://www.tamara-rojo.com/estudios-instituto-alicia-alonso/">SUS RECUERDOS</a>
+                    </span> <br>
+                    <br>
+                    <span><a class="w3-button w3-red w3-text-white" href="https://es.wikipedia.org/wiki/Tamara_Rojo">Más
+                            sobre Tamara Rojo</a>
+                    </span> <br>
+                    <br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Seccion Otros Links -->
+    <div class="w3-container w3-black" style="padding:50px 16px">
+        <h3 class="w3-center">Las Artes Escénicas Transformando el Mundo</h3>
+        <div class="w3-container w3-center w3-large w3-white w3-padding">
+            <div class="w3-center" style="margin-top:64px">
+                <span><a class="w3-button w3-black w3-text-white"
+                        href="https://drive.google.com/file/d/1pVXiSTRs0jE-O3iGrRLc4F3x1f4Vo7A7/view?usp=sharing"
+                        class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                        Video I</a>
+                    <br>
+                    <br>
+                    <a class="w3-button w3-black w3-text-white"
+                        href="https://drive.google.com/file/d/1K-wDccsdKNMEnoQHhPQwr0I9oL-ZAwQH/view?usp=sharing"
+                        class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                        Video II</a>
+                    <br>
+                    <br>
+                    <a class="w3-button w3-black w3-text-white"
+                        href="https://drive.google.com/file/d/1Iv8ANq8uHExOgMViTk3iO5AMu65sTBgN/view?usp=sharing"
+                        class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                        Video III</a>
+                    <br>
+                    <br>
+                    <a class="w3-button w3-black w3-text-white"
+                        href="https://drive.google.com/file/d/1DnLNTpqaUdKrz1Z9cbKKZFfRfjUbs3wl/view?usp=sharing"
+                        class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                        Video IV</a></span>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Link de Eventos realizados --->
+    <div class="w3-container w3-center w3-black" style="padding:70px 16px" id="eventos">
+
+        <h3 class="w3=center">Eventos Realizados</h3>
+
+        <!-- Paralex Section --->
+        <section class="section section-light">
+            <h2>SEGOVIA, SPAIN</h2>
+            <p>
+                Ciudad Sede de los Eventos del Instituto Universitario de la Danza "Alicia Alonso"
+            </p>
+        </section>
+
+        <div class="pimg11">
+            <div class="ptext"><span class="border trans"> </span></div>
+        </div>
+
+        <section class="section section-dark">
+            <h2></h2>
+
+            <span>
+
+                <a class="w3-button w3-black w3-text-white"
+                    href="https://drive.google.com/file/d/17O6THpswFbjQrLbkfqGs2yUxSGVYxt6e/view?usp=sharing"
+                    class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                    Segovia 2015</a>
+
+            </span>
+
+        </section>
+
+        <div class="pimg3">
+            <div class="ptext"><span class="border trans"> </span> </div>
+        </div>
+
+        <section class="section section-dark">
+            <h2></h2>
+            <p>
+                <a class="w3-button w3-black w3-text-white"
+                    href="https://drive.google.com/file/d/1oa7I4LzG4BriYEj8HvlFrq4UynBJT6Sy/view?usp=sharing"
+                    class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                    Segovia 2015 Final </a>
+            </p>
+        </section>
+
+
+        <div class="pimg2">
+            <div class="ptext"><span class="border"></span></div>
+        </div>
+
+        <section class="section section-dark">
+            <h2></h2>
+            <p>
+                <a class="w3-button w3-black w3-text-white"
+                    href="https://drive.google.com/file/d/1SuGGs-WOv5yO5oBcXGMygsUmx3Mt1AS3/view?usp=sharing"
+                    class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                    Primer Concurso</a>
+            </p>
+        </section>
+
+    </div>
+
+
+    <!-- Gallery Section -->
     <br>
+    <br>
+    <div class="w3-container" style="padding:128px 16px" id="work">
+        <h3 class="w3-center">GALERIA</h3>
+        <p class="w3-center w3-large">Trabajos Realizados</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="./ballet-00.png" style="width:100%; height: 200px;" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="ballet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="./work-01.png" style="width:100%; height: 200px;" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="ballet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="./work-022.png" style="width:100%; height: 200px;" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="ballet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="./work-03.png" style="width:100%; height: 200px;" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="ballet">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="./work-04.png" style="width:100%; height: 200px;" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="ballet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="./work-05.png" style="width:100%; height: 200px;" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="ballet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="./work-06.png" style="width:100%; height: 200px;" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="ballet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img class="sombra"
+                    src="http://3.bp.blogspot.com/-5RAfnn9nhEM/UPWEdBu74pI/AAAAAAAAAIw/d0DK7h5-m8s/s1600/PRF_5015.jpg"
+                    style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/sliderbc5.jpg"
+                    style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/silder4bc.jpg"
+                    style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/slider2bc.jpg"
+                    style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img class="sombra" src="https://iudaacampusarte.org/wp-content/uploads/2020/06/sliderbc6.jpg"
+                    style="width:100%; height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="ballet">
+            </div>
+        </div>
+
+        <h3 class="w3-center">Videos</h3>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/iXxjlPfMWOo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/sAadxLbJsXE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/4gTn81bP368"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/S_6j04lhPBI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/3HPMQI1AjVI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/JdbhIohKp0U"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/0i4Oz0j4ueg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/S4MysQ-cU5s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+
+        </div>
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/OBEGKTLRTpY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/fqAjOwds5yo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/gif_DHOVUxk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="w3-col l3 m6">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/PYA94Y6DC-k"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <p class="w3-center">Homenaje a Alicia Alonso </p>
+        <div class="w3-center">
+            <a class="lk" href="https://drive.google.com/file/d/1k6lETt6wGhGy94E0b75BQKk9nG8RV4nY/view?usp=sharing"
+                class="w3-button w3-black"><i class="fa fa-play w3-padding"> </i>
+                Gala XX Aniversario Instituto Universitario de Danza - Video Completo </a>
+        </div>
+
+    </div>
+
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+            title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+
+    <!-- Pricing Section -->
+
+
+
+    <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+        <h3>PRECIO</h3>
+        <p class="w3-large">Por Año</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-third">
+                <h1 class="w3-dark-grey w3-text-dark-grey"></h1>
+            </div>
+
+            <div class="w3-third">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-green w3-xlarge w3-padding-48">Clases</li>
+                    <li class="w3-padding-16"><b></b> Clase I</li>
+                    <li class="w3-padding-16"><b></b> Clase II</li>
+                    <li class="w3-padding-16"><b></b> Clase III</li>
+                    <li class="w3-padding-16"><b></b> Final</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">€ 1000.00 </h2>
+                        <span class="w3-opacity">por año</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+
+                        <p class="w3-text-white"><a href="#contact"
+                                class="w3-button w3-black w3-padding-large">Matricular</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third">
+                <h1 class="w3-dark-grey"></h1>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACTAR</h3>
+        <p class="w3-center w3-large">Mantengámonos en contacto. Envíenos un mensaje:</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Madrid, España</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +34 914-888-177</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email:
+                director.universidad.danza@hotmail.com</p>
+            <br>
 
 
 
 
-    <form id="signup">
-      <p>
-        <input class="w3-input w3-border"  placeholder="Name" type="text" name="name" value="">
-      </p>
-      <p>
-        <input class="w3-input w3-border" placeholder="Email" type="email" name="email" value="">
-      </p>
-      <p>
-      <textarea  class="w3-input w3-border" placeholder="Message" name="message"></textarea>
-      </p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
-        </button>
-      </p>
-      
-    </form>
-    <div class="feedback"></div>
-    <!-- Image of location/map -->
-    <img src="./mapa.png" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
-  </div>
-</div>
+            <form id="signup">
+                <p>
+                    <input class="w3-input w3-border" placeholder="Name" type="text" name="name" value="">
+                </p>
+                <p>
+                    <input class="w3-input w3-border" placeholder="Email" type="email" name="email" value="">
+                </p>
+                <p>
+                    <textarea class="w3-input w3-border" placeholder="Message" name="message"></textarea>
+                </p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+                    </button>
+                </p>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir Arriba</a>
-  <div class="w3-xlarge w3-section">
-     <a href="https://www.facebook.com/instituto.danza/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-     <a href="https://www.instagram.com/instituto_danza/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-     <a href="https://www.youtube.com/channel/UC5mD-bcqQA5gi4uHno7WOpg"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-     <a href="https://twitter.com/instituto_danza"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-     <a href="https://www.linkedin.com/company/instituto-universitario-alicia-alonso/about/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  </div>
-  <p>Powered by <a href="https://www.youtube.com/channel/UC1lQXyfTrW4jTE65LoxIxtw" title="W3.CSS" target="_blank" class="w3-hover-text-green">DSLIJCU</a></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+            </form>
+            <div class="feedback"></div>
+            <!-- Image of location/map -->
+            <img src="./mapa.png" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir Arriba</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/instituto.danza/"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/instituto_danza/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.youtube.com/channel/UC5mD-bcqQA5gi4uHno7WOpg"><i
+                    class="fa fa-youtube w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/instituto_danza"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/company/instituto-universitario-alicia-alonso/about/"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <p>Powered by <a href="https://www.youtube.com/channel/UC1lQXyfTrW4jTE65LoxIxtw" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">DSLIJCU</a></p>
+    </footer>
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
 
 
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
 
-  (function () {
-    console.log('Estoy ahora aqui');
-    const url = 'https://script.google.com/macros/s/AKfycbz6xInmEL_B67TB114PRu9LT1gJ_hYgBjEkZq3nHA8aluhXfuwhpOErpEHLJlwukHaa/exec';
-    const former = document.querySelector('#signup');
-    const submit = document.querySelector('button[type="submit"]');
-    const first = document.querySelector('input[name="name"]');
-    const email = document.querySelector('input[name="email"]');
-    const message = document.querySelector('textarea[name="message"]');
-    const feedback = document.querySelector('.feedback');
-    submit.addEventListener('click', (e) => {
-      e.preventDefault();
-      let error = null;
-      first.style.background = 'white';
-      message.style.background = 'white';
-      email.style.background = 'white';
-      if (first.value.length < 5) {
-        error = 'name not long enough';
-        first.style.background = 'red';
-      }
-      if (message.value.length < 5) {
-        error = 'message not long enough';
-        message.style.background = 'red';
-      }
-      if (!validateEmail(email.value)) {
-        error = 'No valid email';
-        email.style.background = 'red';
-      }
-      console.log(error);
-      if (error) {
-        console.log('error thrown' + error);
-      }
-      else {
-        const payload = {
-          email: email.value
-          , name: first.value
-          , message: message.value
-        };
-        sendeMail(payload);
-        //POST DATA
-      }
-    })
- 
-    function sendeMail(payload) {
-      console.log(payload);
-      fetch(url, {
-        method: 'POST'
-        , body: JSON.stringify(payload)
-      }).then((response) => response.json()).then((data) => {
-        console.log(data);
-        updateFeedback(data.status, 'green');
-      })
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
 
-      document.querySelector('input[name="name"]').value='';
-      document.querySelector('input[name="email"]').value='';
-      document.querySelector('textarea[name="message"]').value='';
-    }
-    function updateFeedback(val, cl) {
-      console.log(val);
-      feedback.style.color = cl;
-      feedback.innerHTML = `${val}`;
-    }
- 
-    function validateEmail(email) {
-      const re = /\S+@\S+\.\S+/;
-      return re.test(email);
-    }
-  })();
-</script>
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+
+
+        (function () {
+            console.log('Estoy ahora aqui');
+            const url = 'https://script.google.com/macros/s/AKfycbz6xInmEL_B67TB114PRu9LT1gJ_hYgBjEkZq3nHA8aluhXfuwhpOErpEHLJlwukHaa/exec';
+            const former = document.querySelector('#signup');
+            const submit = document.querySelector('button[type="submit"]');
+            const first = document.querySelector('input[name="name"]');
+            const email = document.querySelector('input[name="email"]');
+            const message = document.querySelector('textarea[name="message"]');
+            const feedback = document.querySelector('.feedback');
+            submit.addEventListener('click', (e) => {
+                e.preventDefault();
+                let error = null;
+                first.style.background = 'white';
+                message.style.background = 'white';
+                email.style.background = 'white';
+                if (first.value.length < 5) {
+                    error = 'name not long enough';
+                    first.style.background = 'red';
+                }
+                if (message.value.length < 5) {
+                    error = 'message not long enough';
+                    message.style.background = 'red';
+                }
+                if (!validateEmail(email.value)) {
+                    error = 'No valid email';
+                    email.style.background = 'red';
+                }
+                console.log(error);
+                if (error) {
+                    console.log('error thrown' + error);
+                }
+                else {
+                    const payload = {
+                        email: email.value
+                        , name: first.value
+                        , message: message.value
+                    };
+                    sendeMail(payload);
+                    //POST DATA
+                }
+            })
+
+            function sendeMail(payload) {
+                console.log(payload);
+                fetch(url, {
+                    method: 'POST'
+                    , body: JSON.stringify(payload)
+                }).then((response) => response.json()).then((data) => {
+                    console.log(data);
+                    updateFeedback(data.status, 'green');
+                })
+
+                document.querySelector('input[name="name"]').value = '';
+                document.querySelector('input[name="email"]').value = '';
+                document.querySelector('textarea[name="message"]').value = '';
+            }
+            function updateFeedback(val, cl) {
+                console.log(val);
+                feedback.style.color = cl;
+                feedback.innerHTML = `${val}`;
+            }
+
+            function validateEmail(email) {
+                const re = /\S+@\S+\.\S+/;
+                return re.test(email);
+            }
+        })();
+    </script>
 
 </body>
+
 </html>
