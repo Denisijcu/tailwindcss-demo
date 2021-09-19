@@ -30,19 +30,22 @@
   background-attachment: fixed;
 }
 
-.pimg11 {
+.pimg1 {
   background-image: url('segoviadia.jpg');
-  min-height: 100vh;
+  min-height: 70vh;
+  background-size: cover;
 }
 
 .pimg2 {
   background-image: url('segovia-night.jpg');
-  min-height: 100vh;
+  min-height: 70vh;
+  background-size: cover;
 }
 
 .pimg3 {
   background-image: url('segovia.jpg');
-  min-height: 100vh;
+  min-height: 70vh;
+  background-size: cover;
 }
 
 .magia1 {
