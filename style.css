@@ -13,7 +13,11 @@ html {
 .pimg1,
 .pimg11,
 .pimg2,
-.pimg3 {
+.pimg3,
+.magia1,
+.magia2,
+.magia3,
+.magia4{
   position: relative;
   opacity: 1;
   background-position: center;
@@ -40,6 +44,28 @@ html {
   background-image: url('segovia.jpg');
   min-height: 50vh;
 }
+
+.magia1 {
+  background-image: url('magia1.jpg');
+  min-height: 50vh;
+}
+.magia2 {
+  background-image: url('magia2.jpg');
+  min-height: 50vh;
+}
+.magia3 {
+  background-image: url('magia3.jpg');
+  min-height: 50vh;
+}
+.magia4 {
+  background-image: url('magia4.jpg');
+  min-height: 50vh;
+}
+
+
+
+
+
 
 .section {
   text-align: center;
@@ -92,7 +118,11 @@ html {
   .pimg1,
   .pimg11,
   .pimg2,
-  .pimg3 {
+  .pimg3,
+  .magia1,
+  .magia2,
+  .magia3,
+  .magia4 {
     background-attachment: scroll;
   }
 
