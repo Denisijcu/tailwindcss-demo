@@ -127,6 +127,7 @@
   .magia3,
   .magia4 {
     background-attachment: scroll;
+    background-size: auto;
   }
 
   .ptext {
