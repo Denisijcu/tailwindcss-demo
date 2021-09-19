@@ -21,7 +21,7 @@
   position: relative;
   opacity: 1;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   /*
     fixed = parallax
