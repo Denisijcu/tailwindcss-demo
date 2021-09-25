@@ -242,7 +242,7 @@
         function doComment(id,author,comment,date) {
             let clComentario = comment.replace(',',' :)');
             let data = id+','+author+','+clComentario+','+date;
-            let urlComentarios = `https://script.google.com/macros/s/AKfycbwc0rYitaD3FJZpVPjbVIR1KsfFNlsTJqUc5z5TCKjfICpkXuBGtJk2D1jjnz4nkqlsmw/exec?v1=${data}`;
+            let urlComentarios = `https://script.google.com/macros/s/AKfycbz_rKK11zQr4-9pBMQjOitsuvqKfZmYorb-Fvl23rK7TiNWqTyei0Rdv-FBpj2s_GCO/exec?v1=${data}`;
             $.getJSON(urlComentarios);
 
         
