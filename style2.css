@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html,body{
+   background-color:whitesmoke;
+}
+
+
+.relleno{
+    height: 65px; 
+    background-color:white;
+}
+
+.w3-card{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.w3-por {
+    font-size: 1.5rem;
+    color:yellowgreen;
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.w3-fecha {
+    font-size: 0.1rem;
+    color:black;
+}
+h1 {
+    font-size: 0.9rem;
+    font-family: 'Koh Santepheap', cursive;
+}
+
+
+.title-publica{
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.opinion{
+    font-size: 0.7rem;
+}
+
+
+p {
+    font-size: 0.6rem;
+    padding: 8px;
+}
+
+
+#comentario {
+    font-size: 0.7rem;
+}
+
+.w3-button{
+    font-size: 0.8rem;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 5% 25% auto  25%;
+    padding: 0px;
+  }
+
+  .grid-item {
+    padding: 0px;
+    text-align: left;
+    font-size: 0.1rem;
+  }
+
+
+
+
+@media only screen and (min-width: 768px) {
+    body{
+        background-color: green;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        font-family: 'Koh Santepheap', cursive;
+    }
+
+    .opinion{
+        font-size: 0.9rem;
+    }
+    
+    
+   
+  }
+  
+@media only screen and (min-width: 1080px) {
+    body{
+        background-color: orange;
+    }
+
+    h1 {
+        font-size: 1rem;
+        font-family: 'Koh Santepheap', cursive;
+    }
+
+    .opinion{
+        font-size: 0.9rem;
+    }
+    
+    
+  }
+  
+  @media only screen and (min-width: 1450px) {
+
+    body{
+        background-color: whitesmoke;
+        left: 100px;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+    
+
+
+
+    .title-publica{
+        font-family: 'Tangerine', serif;
+        font-size: 80px;
+        text-shadow: 4px 4px 4px #aaa;
+    }
+
+    .w3-por {
+        font-size: 2rem;
+        color:yellowgreen;
+        font-family: 'Tangerine', serif;
+        text-shadow: 4px 4px 4px #aaa;
+    }
+    .w3-fecha {
+        font-size: 1.5rem;
+    }
+
+    .opinion{
+        font-size: 1.2rem;
+    }
+
+    .comentario {
+        font-size: 1.2rem;
+    }
+
+    .relleno{
+        height: 120px; 
+        background-color:white;
+    }
+    
+    
+ 
+   
+  }
