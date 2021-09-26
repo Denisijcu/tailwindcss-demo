@@ -42,7 +42,9 @@
                     <br>
                     
                
-                    <p class="w3-margin-top opinion"><span onClick="doLike(${m.id})"   class="w3-margin"><i id="like" class="w3-padding fa fa-hand-o-up"></i></span><span onClick="doDislike(${m.id})" class="w3-margin"><i id="dislike" class="w3-padding fa fa-hand-o-down"></i></span><span onclick="document.getElementById('id01').style.display='block'" class="w3-button" class="w3-margin"><i class="w3-padding fa fa-share"></i></span></p>
+                    <p class="w3-margin-top opinion"><span onClick="doLike(${m.id})"   
+                        class="w3-margin"><i id="like" class="w3-padding fa fa-thumbs-up"></i></span><span onClick="doDislike(${m.id})" 
+                        class="w3-margin"><i id="dislike" class="w3-padding fa fa-thumbs-down"></i></span><span onclick="document.getElementById('id01').style.display='block'" class="w3-button" class="w3-margin"><i class="w3-padding fa fa-share"></i></span></p>
     
                      <br>
                      <div class="w3-col w3-justify" >${m.content}</div>
@@ -108,7 +110,7 @@
                        <p class="w3-col w3-center w3-black">Comentar</p>
                        <br>
  
-                    <!--
+                    
                     <div class="w3-row w3-section">
                     <div class="w3-col" style="width:50px"><i class="w3-large fa fa-user"></i></div>
                         <div class="w3-rest">
@@ -116,7 +118,7 @@
                         </div>
                     </div>
 
-                    -->
+                    
 
 
 
@@ -176,7 +178,8 @@
                    
 
                    
-                    <p class="w3-center w3-col"><span><i class="w3-padding fa fa-hand-o-up"></i>${post.likes}</span><span><i class="w3-padding fa fa-hand-o-down"></i>${post.dislikes}</span><span><i class="w3-padding fa fa-comment"></i>${post.comments}</span></p>
+                    <p class="w3-center w3-col"><span><i class="w3-padding fa fa-dumbs-up"></i>${post.likes}</span><span>
+                    <i class="w3-padding fa fa-dumbs-down"></i>${post.dislikes}</span><span><i class="w3-padding fa fa-comment"></i>${post.comments}</span></p>
     
 
                     <br>
@@ -299,7 +302,7 @@
 
         function sendMessage() {
 
-          //  const fullName = document.getElementById("fullName").value;
+            const fullName = document.getElementById("fullName").value;
             const textComentario = document.getElementById("comentario").value;
             if (textComentario !== '') {
 
@@ -317,7 +320,7 @@
 
 
 
-                doComment(idComent,'Anonymous',textComentario,fecha);
+                doComment(idComent,fullName,textComentario,fecha);
 
                 setTimeout(() => {
                     document.getElementById("alertMessage").style = "display:none";
