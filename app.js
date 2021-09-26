@@ -244,6 +244,12 @@
             let data = id+','+author+','+clComentario+','+date;
             let urlComentarios = `https://script.google.com/macros/s/AKfycbz_rKK11zQr4-9pBMQjOitsuvqKfZmYorb-Fvl23rK7TiNWqTyei0Rdv-FBpj2s_GCO/exec?v1=${data}`;
             $.getJSON(urlComentarios);
+                
+             /* Agregar 1 comentario en el registro */
+            let comen = id + ',0,0,1';
+            let rUrl = `https://script.google.com/macros/s/AKfycbz_tCw5s2LMqtIUnDDz4wRg-q3f09nXPpQNsibioVpHh3TZ4DfYqeDtRJnMNSimCPKI/exec?v1=${comen}`;
+            $.getJSON(rUrl, function (data) { });
+
 
         
         }
