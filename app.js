@@ -178,8 +178,8 @@
                    
 
                    
-                    <p class="w3-center w3-col"><span><i class="w3-padding fa fa-dumbs-up"></i>${post.likes}</span><span>
-                    <i class="w3-padding fa fa-dumbs-down"></i>${post.dislikes}</span><span><i class="w3-padding fa fa-comment"></i>${post.comments}</span></p>
+                    <p class="w3-center w3-col"><span><i class="w3-padding fa fa-thumbs-up"></i>${post.likes}</span><span>
+                    <i class="w3-padding fa fa-thumbs-down"></i>${post.dislikes}</span><span><i class="w3-padding fa fa-comment"></i>${post.comments}</span></p>
     
 
                     <br>
