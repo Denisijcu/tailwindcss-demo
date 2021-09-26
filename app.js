@@ -114,7 +114,7 @@
                     <div class="w3-row w3-section">
                     <div class="w3-col" style="width:50px"><i class="w3-large fa fa-user"></i></div>
                         <div class="w3-rest">
-                        <input class="w3-input w3-border w3-margin" id="fullName" name="fullName" type="text" placeholder="Nombre Completo" required>
+                        <input class="w3-input w3-border w3-margin" id="fullName" name="fullName" type="text" placeholder="Nombre ..." required>
                         </div>
                     </div>
 
