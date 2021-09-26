@@ -247,7 +247,7 @@
                 
              /* Agregar 1 comentario en el registro */
             let comen = id + ',0,0,1';
-            let rUrl = `https://script.google.com/macros/s/AKfycbz_tCw5s2LMqtIUnDDz4wRg-q3f09nXPpQNsibioVpHh3TZ4DfYqeDtRJnMNSimCPKI/exec?v1=${comen}`;
+            let rUrl = `https://script.google.com/macros/s/AKfycbyIqkDfongXzeOPn31USG4mudvar0ouFijZN78H58JHMDVGTkfOCJ5GjY0SYpF06MBr/exec?v1=${comen}`;
             $.getJSON(rUrl, function (data) { });
 
 
@@ -259,7 +259,7 @@
 
             if (respuesta) {
                 let data = id + ',1,0,0';
-                let rUrl = `https://script.google.com/macros/s/AKfycbz_tCw5s2LMqtIUnDDz4wRg-q3f09nXPpQNsibioVpHh3TZ4DfYqeDtRJnMNSimCPKI/exec?v1=${data}`;
+                let rUrl = `https://script.google.com/macros/s/AKfycbyIqkDfongXzeOPn31USG4mudvar0ouFijZN78H58JHMDVGTkfOCJ5GjY0SYpF06MBr/exec?v1=${data}`;
                 $.getJSON(rUrl, function (data) { });
 
                 var url = 'https://script.google.com/macros/s/AKfycbzfUvumWwIF-tqt-4tCQgyntaF5jUhRf9Eium_udY0qkj7LTZ047VuUODliZMGxF8TgMg/exec'
@@ -280,7 +280,7 @@
 
             if (respuesta) {
                 let data = id + ',0,1,0';
-                let rUrl = `https://script.google.com/macros/s/AKfycbz_tCw5s2LMqtIUnDDz4wRg-q3f09nXPpQNsibioVpHh3TZ4DfYqeDtRJnMNSimCPKI/exec?v1=${data}`;
+                let rUrl = `https://script.google.com/macros/s/AKfycbyIqkDfongXzeOPn31USG4mudvar0ouFijZN78H58JHMDVGTkfOCJ5GjY0SYpF06MBr/exec?v1=${data}`;
                 $.getJSON(rUrl, function (data) { });
 
                 var url = 'https://script.google.com/macros/s/AKfycbzfUvumWwIF-tqt-4tCQgyntaF5jUhRf9Eium_udY0qkj7LTZ047VuUODliZMGxF8TgMg/exec'
