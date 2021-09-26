@@ -114,7 +114,7 @@
                     <div class="w3-row w3-section">
                     <div class="w3-col" style="width:50px"><i class="w3-large fa fa-user"></i></div>
                         <div class="w3-rest">
-                        <input class="w3-input w3-border" id="fullName" name="fullName" type="text" placeholder="Nombre Completo" required>
+                        <input class="w3-input w3-border w3-margin" id="fullName" name="fullName" type="text" placeholder="Nombre Completo" required>
                         </div>
                     </div>
 
@@ -245,7 +245,7 @@
         function doComment(id,author,comment,date) {
             let clComentario = comment.replace(',',' :)');
             let data = id+','+author+','+clComentario+','+date;
-            let urlComentarios = `https://script.google.com/macros/s/AKfycbzK08pIiyGGGELhJEuSRtYVSL1GmtXaV6y1huQDfwMx705whCYCOyhzRKKmCumE3NU5Pg/exec?v1=${data}`;
+            let urlComentarios = `https://script.google.com/macros/s/AKfycbyiOUiD8n2KPdKXhB4GfGUu2pg3u557d1cztm0knzdm1_2Zh-DgVIB1FgOGUtV8dRdJrg/exec?v1=${data}`;
             $.getJSON(urlComentarios);
                 
              /* Agregar 1 comentario en el registro */
