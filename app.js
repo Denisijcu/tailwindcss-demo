@@ -259,7 +259,7 @@
 
             if (respuesta) {
                 let data = id + ',1,0,0';
-                let rUrl = `https://script.google.com/macros/s/AKfycbyIqkDfongXzeOPn31USG4mudvar0ouFijZN78H58JHMDVGTkfOCJ5GjY0SYpF06MBr/exec?v1=${data}`;
+                let rUrl = `https://script.google.com/macros/s/AKfycbxqqhToMbk6Jg11bZzz6uQIG272yQ5qDk0JokdjbJSLlreMTTXgVV3Ndq4v9SgCUJvX/exec?v1=${data}`;
                 $.getJSON(rUrl, function (data) { });
 
                 var url = 'https://script.google.com/macros/s/AKfycbzfUvumWwIF-tqt-4tCQgyntaF5jUhRf9Eium_udY0qkj7LTZ047VuUODliZMGxF8TgMg/exec'
@@ -280,7 +280,7 @@
 
             if (respuesta) {
                 let data = id + ',0,1,0';
-                let rUrl = `https://script.google.com/macros/s/AKfycbyIqkDfongXzeOPn31USG4mudvar0ouFijZN78H58JHMDVGTkfOCJ5GjY0SYpF06MBr/exec?v1=${data}`;
+                let rUrl = `https://script.google.com/macros/s/AKfycbxqqhToMbk6Jg11bZzz6uQIG272yQ5qDk0JokdjbJSLlreMTTXgVV3Ndq4v9SgCUJvX/exec?v1=${data}`;
                 $.getJSON(rUrl, function (data) { });
 
                 var url = 'https://script.google.com/macros/s/AKfycbzfUvumWwIF-tqt-4tCQgyntaF5jUhRf9Eium_udY0qkj7LTZ047VuUODliZMGxF8TgMg/exec'
