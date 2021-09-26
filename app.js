@@ -325,7 +325,7 @@
                 setTimeout(() => {
                     document.getElementById("alertMessage").style = "display:none";
 
-                   // document.getElementById("fullName").value = '';
+                    document.getElementById("fullName").value = '';
                     document.getElementById("comentario").value = '';
                 }, 3000);
 
