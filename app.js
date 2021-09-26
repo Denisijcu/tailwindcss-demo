@@ -371,7 +371,7 @@
 
         function getData() {
 
-            var url = 'https://script.google.com/macros/s/AKfycbydAdOQNWvTlta-_mZ97E9D03KaSTDlsAVUnhe0CyfPSxGBxynqsJy5Waj4CdTX-1mEUA/exec'
+            var url = 'https://script.google.com/macros/s/AKfycbzeC7bQkuep4qAVEH1khc9jGdD2pQmdxHvBXuIyhREA5cboe4lXPrAB5HHVNphVVHSH3g/exec'
             $.getJSON(url, function (data) {
                 datos = data;
 
