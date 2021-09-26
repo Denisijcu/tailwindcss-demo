@@ -214,7 +214,7 @@
 
             }
 
-            dislike = !like;
+           // dislike = !like;
 
 
 
@@ -236,7 +236,7 @@
 
             }
 
-            like = !dislike;
+          //  like = !dislike;
         }
 
         function doComment(id,author,comment,date) {
