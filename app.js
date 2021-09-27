@@ -17,7 +17,7 @@
                 
                       /* Agregar una vista en el registro */
             let visita = id.toString() + ',0,0,0,1';
-            let vUrl = `https://script.google.com/macros/s/AKfycbyIqkDfongXzeOPn31USG4mudvar0ouFijZN78H58JHMDVGTkfOCJ5GjY0SYpF06MBr/exec?v1=${visita}`;
+            let vUrl = `https://script.google.com/macros/s/AKfycbzH9pWsj19fELz-RGCNndeNGFZfh2fDPRC1sfyMiTZ8r-Ie0BlWuRtwbRIq8TMzo4TK/exec?v1=${visita}`;
             $.getJSON(vUrl);
                 
 
@@ -258,7 +258,7 @@
                 
              /* Agregar 1 comentario en el registro */
             let comen = id + ',0,0,1';
-            let rUrl = `https://script.google.com/macros/s/AKfycbyIqkDfongXzeOPn31USG4mudvar0ouFijZN78H58JHMDVGTkfOCJ5GjY0SYpF06MBr/exec?v1=${comen}`;
+            let rUrl = `https://script.google.com/macros/s/AKfycbzH9pWsj19fELz-RGCNndeNGFZfh2fDPRC1sfyMiTZ8r-Ie0BlWuRtwbRIq8TMzo4TK/exec?v1=${comen}`;
             $.getJSON(rUrl, function (data) { });
 
 
@@ -269,8 +269,8 @@
         function setLike(id, respuesta) {
 
             if (respuesta) {
-                let data = id + ',1,0,0';
-                let rUrl = `https://script.google.com/macros/s/AKfycbzSlVxAjHPUUDIIWi2wxFN4nUcPRWyM8UrEr_oSghSWzCQmy-41t9H8_UQfF5pH5suU/exec?v1=${data}`;
+                let data = id + ',1,0,0,0';
+                let rUrl = `https://script.google.com/macros/s/AKfycbzH9pWsj19fELz-RGCNndeNGFZfh2fDPRC1sfyMiTZ8r-Ie0BlWuRtwbRIq8TMzo4TK/exec?v1=${data}`;
                 $.getJSON(rUrl, function (data) { });
 
                 var url = 'https://script.google.com/macros/s/AKfycbxSY629YlI1vH5pEyWU6JKD8txtNYC6oyMm5viNCupXcbKgHajfBtCCASdKvFeoLsrAIw/exec'
@@ -290,8 +290,8 @@
         function setDislike(id, respuesta) {
 
             if (respuesta) {
-                let data = id + ',0,1,0';
-                let rUrl = `https://script.google.com/macros/s/AKfycbzSlVxAjHPUUDIIWi2wxFN4nUcPRWyM8UrEr_oSghSWzCQmy-41t9H8_UQfF5pH5suU/exec?v1=${data}`;
+                let data = id + ',0,1,0,0';
+                let rUrl = `https://script.google.com/macros/s/AKfycbzH9pWsj19fELz-RGCNndeNGFZfh2fDPRC1sfyMiTZ8r-Ie0BlWuRtwbRIq8TMzo4TK/exec?v1=${data}`;
                 $.getJSON(rUrl, function (data) { });
 
                  // Link the las publicaciones
