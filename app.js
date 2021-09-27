@@ -145,6 +145,13 @@
             titulares.innerHTML = temple;
 
             temple = '';
+                
+                 /* Agregar una vista en el registro */
+            let visita = id + ',0,0,0,1';
+            let vUrl = `https://script.google.com/macros/s/AKfycbyIqkDfongXzeOPn31USG4mudvar0ouFijZN78H58JHMDVGTkfOCJ5GjY0SYpF06MBr/exec?v1=${visita}`;
+            $.getJSON(vUrl, function (data) { });
+
+
 
         }
 
@@ -177,7 +184,8 @@
 
                    
 
-                   
+                    <p> Visitas ${post.visita}</p>
+                    
                     <p class="w3-center w3-col"><span><i class="w3-padding fa fa-thumbs-up"></i>${post.likes}</span><span>
                     <i class="w3-padding fa fa-thumbs-down"></i>${post.dislikes}</span><span><i class="w3-padding fa fa-comment"></i>${post.comments}</span></p>
     
