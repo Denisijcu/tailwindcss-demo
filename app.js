@@ -184,7 +184,7 @@
 
                    
 
-                    <p> Visitas ${post.visita}</p>
+                    <p class="w3-black w3-margin w3-padding"><span> class="w3-por"> Esta publicación se ha visto:</span> <span> ${post.visita} </span></p>
                     
                     <p class="w3-center w3-col"><span><i class="w3-padding fa fa-thumbs-up"></i>${post.likes}</span><span>
                     <i class="w3-padding fa fa-thumbs-down"></i>${post.dislikes}</span><span><i class="w3-padding fa fa-comment"></i>${post.comments}</span></p>
