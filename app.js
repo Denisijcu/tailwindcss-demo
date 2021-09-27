@@ -273,7 +273,7 @@
                 let rUrl = `https://script.google.com/macros/s/AKfycbzSlVxAjHPUUDIIWi2wxFN4nUcPRWyM8UrEr_oSghSWzCQmy-41t9H8_UQfF5pH5suU/exec?v1=${data}`;
                 $.getJSON(rUrl, function (data) { });
 
-                var url = 'https://script.google.com/macros/s/AKfycbzfUvumWwIF-tqt-4tCQgyntaF5jUhRf9Eium_udY0qkj7LTZ047VuUODliZMGxF8TgMg/exec'
+                var url = 'https://script.google.com/macros/s/AKfycbyDsunG9paZXLNFLQKHXRB9INK8SND3cO1cTnB9W9vDor-8rhIPXVrX680v1TK8kiQP5A/exec'
                 $.getJSON(url, function (data) {
 
                     setTimeout(() => datos = data, 3000)
@@ -294,7 +294,8 @@
                 let rUrl = `https://script.google.com/macros/s/AKfycbzSlVxAjHPUUDIIWi2wxFN4nUcPRWyM8UrEr_oSghSWzCQmy-41t9H8_UQfF5pH5suU/exec?v1=${data}`;
                 $.getJSON(rUrl, function (data) { });
 
-                var url = 'https://script.google.com/macros/s/AKfycbzfUvumWwIF-tqt-4tCQgyntaF5jUhRf9Eium_udY0qkj7LTZ047VuUODliZMGxF8TgMg/exec'
+                 // Link the las publicaciones
+                var url = 'https://script.google.com/macros/s/AKfycbyDsunG9paZXLNFLQKHXRB9INK8SND3cO1cTnB9W9vDor-8rhIPXVrX680v1TK8kiQP5A/exec'
                 $.getJSON(url, function (data) {
                     setTimeout(() => datos = data, 3000)
                 });
@@ -382,7 +383,7 @@
 
         function getData() {
 
-            var url = 'https://script.google.com/macros/s/AKfycbzeC7bQkuep4qAVEH1khc9jGdD2pQmdxHvBXuIyhREA5cboe4lXPrAB5HHVNphVVHSH3g/exec'
+            var url = 'https://script.google.com/macros/s/AKfycbyDsunG9paZXLNFLQKHXRB9INK8SND3cO1cTnB9W9vDor-8rhIPXVrX680v1TK8kiQP5A/exec'
             $.getJSON(url, function (data) {
                 datos = data;
 
