@@ -147,7 +147,7 @@
             temple = '';
                 
                  /* Agregar una vista en el registro */
-            let visita = id + ',0,0,0,1';
+            let visita = id.toString() + ',0,0,0,1';
             let vUrl = `https://script.google.com/macros/s/AKfycbyIqkDfongXzeOPn31USG4mudvar0ouFijZN78H58JHMDVGTkfOCJ5GjY0SYpF06MBr/exec?v1=${visita}`;
             $.getJSON(vUrl, function (data) { });
 
