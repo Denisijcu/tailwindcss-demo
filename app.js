@@ -44,7 +44,7 @@
 
 
                     
-                    <img src="${m.imageUrl}" alt="image"  width="70%" height="auto"/>
+                    <img src="${m.imageUrl}" alt="image"  width="90%" height="auto"/>
 
                     <br>
                     
@@ -74,7 +74,7 @@
 
                                      <div class="grid-item">
                                   
-                                        <img src='${iUrl}' alt="image"  height="50px" width="50px">
+                                        <img src='${iUrl}' alt="image"  height="auto" width="90%">
                                   
                                  
                                         <p class="w3-por w3-text-red" style="margin-left:15px;">${c.author}</p>
@@ -180,7 +180,7 @@
                       
 
                     
-                    <img  src="${post.imageUrl}" alt="image"  width="70%" height="auto"/>
+                    <img  src="${post.imageUrl}" alt="image"  width="90%" height="auto"/>
 
                    
 
