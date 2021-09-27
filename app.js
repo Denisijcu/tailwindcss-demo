@@ -44,7 +44,7 @@
 
 
                     
-                    <img src="${m.imageUrl}" alt="image"  width="50%" height="auto"/>
+                    <img src="${m.imageUrl}" alt="image"  width="70%" height="auto"/>
 
                     <br>
                     
@@ -180,7 +180,7 @@
                       
 
                     
-                    <img  src="${post.imageUrl}" alt="image"  width="50%" height="auto"/>
+                    <img  src="${post.imageUrl}" alt="image"  width="70%" height="auto"/>
 
                    
 
