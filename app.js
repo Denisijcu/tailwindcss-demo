@@ -74,7 +74,7 @@
 
                                      <div class="grid-item">
                                   
-                                        <img src='${iUrl}' alt="image"  height="auto" width="90%">
+                                        <img src='${iUrl}' alt="image"  height="50px" width="50px">
                                   
                                  
                                         <p class="w3-por w3-text-red" style="margin-left:15px;">${c.author}</p>
